@@ -5,13 +5,13 @@
 
 @section('content')
 <!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
-<div class="relative flex min-h-[75vh] sm:min-h-[82vh] lg:min-h-[88vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+<div class="relative flex min-h-[auto] sm:min-h-[78vh] lg:min-h-[88vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
      style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.92) 0%, rgba(7, 30, 60, 0.72) 55%, rgba(7, 30, 60, 0.35) 100%), url('{{ asset('images/dispill-packaging.jpg') }}');">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
         
         <!-- Bottom Elevated Navy Glass Card -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-20 sm:pb-32 lg:pb-44">
+        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-14 sm:pb-28 lg:pb-40">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- Pill Badge -->
@@ -74,7 +74,7 @@
 </div>
 
 <!-- Floating Overlapping Strip: 4 Daily Dosage Slots (Goldberger Format) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-12 sm:-mt-20 lg:-mt-32 relative z-30 mb-12 sm:mb-16">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-8 sm:-mt-16 lg:-mt-28 relative z-30 mb-12 sm:mb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         
         <!-- Slot 1: Morning -->
@@ -240,42 +240,53 @@
             </h2>
         </div>
 
+        <div class="block sm:hidden text-center text-xs text-slate-500 font-medium">
+            <span class="inline-flex items-center gap-1.5 bg-slate-100 px-3 py-1 rounded-full">
+                <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                <span>Swipe left/right to compare features</span>
+            </span>
+        </div>
+
         <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-            <div class="grid grid-cols-12 bg-[#0B2F5C] text-white p-4 sm:p-5 text-xs sm:text-sm font-bold">
-                <div class="col-span-5 sm:col-span-4">Feature</div>
-                <div class="col-span-3 sm:col-span-4 text-slate-300">Standard Bottles</div>
-                <div class="col-span-4 text-amber-300 font-extrabold">Dis-Pill System</div>
-            </div>
+            <div class="overflow-x-auto">
+                <div class="min-w-[520px]">
+                    <div class="grid grid-cols-12 bg-[#0B2F5C] text-white p-4 sm:p-5 text-xs sm:text-sm font-bold">
+                        <div class="col-span-5 sm:col-span-4">Feature</div>
+                        <div class="col-span-3 sm:col-span-4 text-slate-300">Standard Bottles</div>
+                        <div class="col-span-4 text-amber-300 font-extrabold">Dis-Pill System</div>
+                    </div>
 
-            <div class="divide-y divide-slate-100 text-xs sm:text-sm text-slate-700">
-                <div class="grid grid-cols-12 p-4 sm:p-5 items-center">
-                    <div class="col-span-5 sm:col-span-4 font-semibold">Cost to Patient</div>
-                    <div class="col-span-3 sm:col-span-4 text-slate-500">Standard Copay</div>
-                    <div class="col-span-4 font-bold text-emerald-700">100% Free Service ($0)</div>
-                </div>
+                    <div class="divide-y divide-slate-100 text-xs sm:text-sm text-slate-700">
+                        <div class="grid grid-cols-12 p-4 sm:p-5 items-center">
+                            <div class="col-span-5 sm:col-span-4 font-semibold">Cost to Patient</div>
+                            <div class="col-span-3 sm:col-span-4 text-slate-500">Standard Copay</div>
+                            <div class="col-span-4 font-bold text-emerald-700">100% Free Service ($0)</div>
+                        </div>
 
-                <div class="grid grid-cols-12 p-4 sm:p-5 items-center bg-slate-50/50">
-                    <div class="col-span-5 sm:col-span-4 font-semibold">Missed / Double Dose Risk</div>
-                    <div class="col-span-3 sm:col-span-4 text-red-600 font-medium">High (Hard to track)</div>
-                    <div class="col-span-4 font-bold text-emerald-700">Near Zero (Visual dates)</div>
-                </div>
+                        <div class="grid grid-cols-12 p-4 sm:p-5 items-center bg-slate-50/50">
+                            <div class="col-span-5 sm:col-span-4 font-semibold">Missed / Double Dose Risk</div>
+                            <div class="col-span-3 sm:col-span-4 text-red-600 font-medium">High (Hard to track)</div>
+                            <div class="col-span-4 font-bold text-emerald-700">Near Zero (Visual dates)</div>
+                        </div>
 
-                <div class="grid grid-cols-12 p-4 sm:p-5 items-center">
-                    <div class="col-span-5 sm:col-span-4 font-semibold">Ease for Arthritis</div>
-                    <div class="col-span-3 sm:col-span-4 text-slate-500">Difficult childproof caps</div>
-                    <div class="col-span-4 font-bold text-emerald-700">Gentle foil push-through</div>
-                </div>
+                        <div class="grid grid-cols-12 p-4 sm:p-5 items-center">
+                            <div class="col-span-5 sm:col-span-4 font-semibold">Ease for Arthritis</div>
+                            <div class="col-span-3 sm:col-span-4 text-slate-500">Difficult childproof caps</div>
+                            <div class="col-span-4 font-bold text-emerald-700">Gentle foil push-through</div>
+                        </div>
 
-                <div class="grid grid-cols-12 p-4 sm:p-5 items-center bg-slate-50/50">
-                    <div class="col-span-5 sm:col-span-4 font-semibold">Travel Convenience</div>
-                    <div class="col-span-3 sm:col-span-4 text-slate-500">Carry multiple bulky bottles</div>
-                    <div class="col-span-4 font-bold text-emerald-700">Tear off single daily pods</div>
-                </div>
+                        <div class="grid grid-cols-12 p-4 sm:p-5 items-center bg-slate-50/50">
+                            <div class="col-span-5 sm:col-span-4 font-semibold">Travel Convenience</div>
+                            <div class="col-span-3 sm:col-span-4 text-slate-500">Carry multiple bulky bottles</div>
+                            <div class="col-span-4 font-bold text-emerald-700">Tear off single daily pods</div>
+                        </div>
 
-                <div class="grid grid-cols-12 p-4 sm:p-5 items-center">
-                    <div class="col-span-5 sm:col-span-4 font-semibold">Pharmacist Verification</div>
-                    <div class="col-span-3 sm:col-span-4 text-slate-500">Bottle-by-bottle</div>
-                    <div class="col-span-4 font-bold text-emerald-700">Complete drug interaction check</div>
+                        <div class="grid grid-cols-12 p-4 sm:p-5 items-center">
+                            <div class="col-span-5 sm:col-span-4 font-semibold">Pharmacist Verification</div>
+                            <div class="col-span-3 sm:col-span-4 text-slate-500">Bottle-by-bottle</div>
+                            <div class="col-span-4 font-bold text-emerald-700">Complete drug interaction check</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

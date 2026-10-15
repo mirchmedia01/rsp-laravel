@@ -5,13 +5,13 @@
 
 @section('content')
 <!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
-<div class="relative flex min-h-[75vh] sm:min-h-[82vh] lg:min-h-[88vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+<div class="relative flex min-h-[auto] sm:min-h-[78vh] lg:min-h-[88vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
      style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.92) 0%, rgba(7, 30, 60, 0.72) 55%, rgba(7, 30, 60, 0.35) 100%), url('{{ asset('images/refill-your-rx.jpg') }}');">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
         
         <!-- Bottom Elevated Navy Glass Card -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-20 sm:pb-32 lg:pb-44">
+        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-14 sm:pb-28 lg:pb-40">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- Pill Badge -->
@@ -74,7 +74,7 @@
 </div>
 
 <!-- Floating Overlapping Strip: 3 Benefits of Transferring (Goldberger Format) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-12 sm:-mt-20 lg:-mt-32 relative z-30 mb-12 sm:mb-16">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-8 sm:-mt-16 lg:-mt-28 relative z-30 mb-12 sm:mb-16">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- Box 1 -->
@@ -188,13 +188,13 @@
                             <div>
                                 <label for="first_name" class="block text-xs font-bold text-slate-700 mb-1.5">First Name *</label>
                                 <input type="text" name="first_name" id="first_name" required value="{{ old('first_name') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="e.g. Maria">
                             </div>
                             <div>
                                 <label for="last_name" class="block text-xs font-bold text-slate-700 mb-1.5">Last Name *</label>
                                 <input type="text" name="last_name" id="last_name" required value="{{ old('last_name') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="e.g. Rodriguez">
                             </div>
                         </div>
@@ -203,12 +203,12 @@
                             <div>
                                 <label for="dob" class="block text-xs font-bold text-slate-700 mb-1.5">Date of Birth</label>
                                 <input type="date" name="dob" id="dob" value="{{ old('dob') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition">
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition">
                             </div>
                             <div>
                                 <label for="phone" class="block text-xs font-bold text-slate-700 mb-1.5">Primary Phone Number *</label>
                                 <input type="tel" name="phone" id="phone" required value="{{ old('phone') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="(718) 555-0123">
                             </div>
                         </div>
@@ -217,13 +217,13 @@
                             <div>
                                 <label for="email" class="block text-xs font-bold text-slate-700 mb-1.5">Email Address (Optional)</label>
                                 <input type="email" name="email" id="email" value="{{ old('email') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="maria@example.com">
                             </div>
                             <div>
                                 <label for="address" class="block text-xs font-bold text-slate-700 mb-1.5">Home Delivery Address (Optional)</label>
                                 <input type="text" name="address" id="address" value="{{ old('address') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="e.g. 1020 Ogden Ave, Apt 4B">
                             </div>
                         </div>
@@ -239,13 +239,13 @@
                             <div>
                                 <label for="current_pharmacy_name" class="block text-xs font-bold text-slate-700 mb-1.5">Current Pharmacy Name *</label>
                                 <input type="text" name="current_pharmacy_name" id="current_pharmacy_name" required value="{{ old('current_pharmacy_name') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="e.g. Walgreens, CVS, or Rite Aid">
                             </div>
                             <div>
                                 <label for="current_pharmacy_phone" class="block text-xs font-bold text-slate-700 mb-1.5">Current Pharmacy Phone (If known)</label>
                                 <input type="tel" name="current_pharmacy_phone" id="current_pharmacy_phone" value="{{ old('current_pharmacy_phone') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="(718) 000-0000">
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                                 Rx Numbers or Medication Names *
                             </label>
                             <textarea name="medications_or_rx_numbers" id="medications_or_rx_numbers" rows="3" required
-                                class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition leading-relaxed"
+                                class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition leading-relaxed"
                                 placeholder="Please list the names of your medications or the Rx numbers printed on your prescription bottles. (Or type 'Transfer all active medications')">{{ old('medications_or_rx_numbers') }}</textarea>
                             <span class="text-[11px] text-slate-500 mt-1 block">You can also write "Transfer all my active prescriptions".</span>
                         </div>
@@ -271,13 +271,13 @@
                             <div>
                                 <label for="doctor_name" class="block text-xs font-bold text-slate-700 mb-1.5">Prescribing Doctor's Name (Optional)</label>
                                 <input type="text" name="doctor_name" id="doctor_name" value="{{ old('doctor_name') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="Dr. Smith">
                             </div>
                             <div>
                                 <label for="insurance_name" class="block text-xs font-bold text-slate-700 mb-1.5">Insurance / Medicaid Plan Name (Optional)</label>
                                 <input type="text" name="insurance_name" id="insurance_name" value="{{ old('insurance_name') }}"
-                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
+                                    class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition"
                                     placeholder="e.g. Fidelis, Healthfirst, MetroPlus, Medicare">
                             </div>
                         </div>
@@ -287,7 +287,7 @@
                                 Special Requests or Packaging Needs (Optional)
                             </label>
                             <textarea name="special_notes" id="special_notes" rows="2"
-                                class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition leading-relaxed"
+                                class="w-full px-3.5 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-base sm:text-sm transition leading-relaxed"
                                 placeholder="e.g., 'Please package into Dis-Pill blister packs' or 'Deliver to my apartment'">{{ old('special_notes') }}</textarea>
                         </div>
                     </div>

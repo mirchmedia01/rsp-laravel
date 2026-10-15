@@ -66,71 +66,89 @@
 <body class="bg-white text-slate-900 antialiased font-sans selection:bg-royal selection:text-white flex flex-col min-h-screen">
 
     <!-- Top Utility Bar (Demo Site Navy #0B2F5C Style) -->
-    <div class="bg-[#0B2F5C] text-white border-b border-white/10">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5 px-3 sm:px-6 py-2 text-[11px] sm:text-xs">
-            <!-- Left Contact Info -->
-            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1.5 text-center sm:text-left">
-                <div class="flex items-center gap-1.5 text-white/90">
-                    <svg class="w-3.5 h-3.5 text-[#E8F0FE] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                    <span class="break-words">1018 Ogden Ave, Bronx, NY 10452</span>
-                </div>
-                <div class="flex items-center gap-1.5">
+    <div class="bg-[#0B2F5C] text-white border-b border-white/10 relative z-30">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2 text-[11px] sm:text-xs">
+            
+            <!-- Mobile Compact 1-Line Bar (< sm) -->
+            <div class="flex sm:hidden items-center justify-between w-full gap-2 text-[11px]">
+                <a href="tel:7185388183" class="inline-flex items-center gap-1.5 font-bold text-white hover:underline shrink-0">
                     <svg class="w-3.5 h-3.5 text-[#E8F0FE] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
-                    <a href="tel:7185388183" class="font-bold text-white hover:underline">(718) 538-8183</a>
+                    <span>(718) 538-8183</span>
+                </a>
+                <span class="text-white/30">&bull;</span>
+                <span class="text-[10px] text-slate-200 truncate">1018 Ogden Ave</span>
+                <span class="text-white/30">&bull;</span>
+                <span class="bg-white/15 px-2 py-0.5 rounded-full text-[10px] font-semibold text-white whitespace-nowrap">
+                    Español
+                </span>
+            </div>
+
+            <!-- Tablet / Desktop View (>= sm) -->
+            <div class="hidden sm:flex items-center justify-between w-full gap-3">
+                <!-- Left Contact Info -->
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-left">
+                    <div class="flex items-center gap-1.5 text-white/90">
+                        <svg class="w-3.5 h-3.5 text-[#E8F0FE] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        <span>1018 Ogden Ave, Bronx, NY 10452</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-[#E8F0FE] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+                        <a href="tel:7185388183" class="font-bold text-white hover:underline">(718) 538-8183</a>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-1.5 text-white/80">
+                        <svg class="w-3.5 h-3.5 text-[#E8F0FE] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        <span>info@rspioneerpharmacy.com</span>
+                    </div>
                 </div>
-                <div class="hidden lg:flex items-center gap-1.5 text-white/80">
-                    <svg class="w-3.5 h-3.5 text-[#E8F0FE] shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                    <span>info@rspioneerpharmacy.com</span>
+
+                <!-- Right Reviews & Language -->
+                <div class="flex items-center gap-2.5 lg:gap-3">
+                    <span class="bg-white/10 px-2.5 py-0.5 rounded-full text-[11px] font-semibold text-white/95 whitespace-nowrap inline-flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-[#E8F0FE]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        <span>English &bull; Se Habla Español</span>
+                    </span>
+                    <div class="flex items-center gap-1 text-white">
+                        <div class="flex text-amber-300">
+                            @for ($i = 0; $i < 5; $i++)
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            @endfor
+                        </div>
+                        <span class="text-[11px] text-white/90 font-bold inline-flex items-center gap-1">
+                            <span>4.5</span>
+                            <span class="font-normal text-white/80">(39)</span>
+                        </span>
+                    </div>
+                    <!-- Google Review Circle Button -->
+                    <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="w-6 h-6 rounded-full bg-white text-[#0B2F5C] flex items-center justify-center hover:scale-105 transition shadow-sm" title="Google Reviews">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 7.13 15.34 7.44 15.77.29.41.83.41 1.12 0C12.87 23.34 20 13.25 20 8c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+                    </a>
+                    <!-- Instagram Circle Button -->
+                    <a href="https://www.instagram.com/rs_pioneerpharmacy/" target="_blank" rel="noopener" class="w-6 h-6 rounded-full bg-white text-[#C1272D] flex items-center justify-center hover:scale-105 transition shadow-sm" title="Instagram">
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
                 </div>
             </div>
 
-            <!-- Right Reviews & Language -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <span class="bg-white/10 px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold text-white/95 whitespace-nowrap inline-flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5 text-[#E8F0FE]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                    <span>English &bull; Se Habla Español</span>
-                </span>
-                <div class="flex items-center gap-1 text-white">
-                    <div class="flex text-amber-300">
-                        @for ($i = 0; $i < 5; $i++)
-                            <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        @endfor
-                    </div>
-                    <span class="text-[10px] sm:text-[11px] text-white/90 font-bold inline-flex items-center gap-1">
-                        <span>4.5</span>
-                        <svg class="w-3 h-3 text-amber-300 fill-current inline" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        <span class="font-normal text-white/80">(39)</span>
-                    </span>
-                </div>
-                <!-- Google Review Circle Button -->
-                <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white text-[#0B2F5C] flex items-center justify-center hover:scale-105 transition shadow-sm" title="Google Reviews">
-                    <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C7.58 0 4 3.58 4 8c0 5.25 7.13 15.34 7.44 15.77.29.41.83.41 1.12 0C12.87 23.34 20 13.25 20 8c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
-                </a>
-                <!-- Instagram Circle Button -->
-                <a href="https://www.instagram.com/rs_pioneerpharmacy/" target="_blank" rel="noopener" class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white text-[#C1272D] flex items-center justify-center hover:scale-105 transition shadow-sm" title="Instagram">
-                    <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                </a>
-            </div>
         </div>
     </div>
 
     <!-- Main Navigation Bar (Clean White / Demo Site Palette Style) -->
-    <nav class="sticky top-0 z-[99] bg-white/95 text-[#0B2F5C] shadow-[0_2px_18px_rgba(11,47,92,0.06)] backdrop-blur-xl border-b border-black/[0.06] transition-all duration-300">
+    <nav class="sticky top-0 z-[100] bg-white/95 text-[#0B2F5C] shadow-[0_2px_18px_rgba(11,47,92,0.06)] backdrop-blur-xl border-b border-black/[0.06] transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
             
             <!-- Left: Mobile Toggle & Logo -->
-            <div class="flex items-center gap-3 sm:gap-4">
-                <button id="mobile-menu-btn" type="button" class="md:hidden text-[#0B2F5C] hover:text-[#C1272D] p-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0B2F5C]/15 transition" aria-label="Toggle menu" aria-expanded="false">
-                    <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-[#0B2F5C] hover:text-[#C1272D] p-2 -ml-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0B2F5C]/15 transition cursor-pointer" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
-                <a href="{{ route('home') }}" class="flex items-center py-1 group">
-                    <img src="{{ asset('images/logo.svg') }}" alt="R & S Pioneer Pharmacy — 1018 Ogden Ave, Bronx" class="h-10 sm:h-12 md:h-14 w-auto object-contain group-hover:scale-[1.02] transition-transform">
+                <a href="{{ route('home') }}" class="flex items-center py-1 group shrink-0">
+                    <img src="{{ asset('images/logo.svg') }}" alt="R & S Pioneer Pharmacy — 1018 Ogden Ave, Bronx" class="h-9 sm:h-12 md:h-14 w-auto object-contain shrink-0 group-hover:scale-[1.02] transition-transform">
                 </a>
             </div>
 
             <!-- Center: Navigation Links in Deep Navy (#0B2F5C) -->
-            <div class="hidden md:flex items-center gap-4 lg:gap-7 text-sm font-semibold">
+            <div class="hidden md:flex items-center gap-3 lg:gap-6 xl:gap-7 text-xs lg:text-sm font-semibold">
                 <a href="{{ route('home') }}" class="py-2 transition {{ request()->routeIs('home') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
                     Home
                 </a>
@@ -168,96 +186,114 @@
             </div>
 
             <!-- Right: Action Buttons (Desktop) -->
-            <div class="hidden sm:flex items-center gap-2.5 lg:gap-3">
+            <div class="hidden sm:flex items-center gap-2 lg:gap-3 shrink-0">
                 <!-- Refill Button -->
-                <a href="{{ route('refill') }}" class="inline-flex items-center gap-2 bg-white border border-[#0B2F5C]/20 hover:border-[#0B2F5C] text-[#0B2F5C] text-xs font-bold px-3.5 lg:px-4 py-2.5 rounded-full transition hover:bg-[#E8F0FE]/50 shadow-sm">
+                <a href="{{ route('refill') }}" class="inline-flex items-center gap-1.5 lg:gap-2 bg-white border border-[#0B2F5C]/20 hover:border-[#0B2F5C] text-[#0B2F5C] text-xs font-bold px-3 lg:px-4 py-2 lg:py-2.5 rounded-full transition hover:bg-[#E8F0FE]/50 shadow-sm">
                     <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                    Refill ℞
+                    <span>Refill ℞</span>
                 </a>
                 <!-- New Patient / Transfer Rx Accent Button (Navy #0B2F5C) -->
-                <a href="{{ route('transfer') }}" class="inline-flex items-center gap-2 bg-[#0B2F5C] hover:bg-[#071E3C] text-white text-xs font-bold px-4 lg:px-5 py-2.5 rounded-full transition shadow-md hover:scale-105">
+                <a href="{{ route('transfer') }}" class="inline-flex items-center gap-1.5 lg:gap-2 bg-[#0B2F5C] hover:bg-[#071E3C] text-white text-xs font-bold px-3.5 lg:px-5 py-2 lg:py-2.5 rounded-full transition shadow-md hover:scale-105">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
-                    Transfer ℞
+                    <span>Transfer ℞</span>
                 </a>
             </div>
 
             <!-- Mobile Quick Actions -->
-            <div class="sm:hidden flex items-center gap-2">
-                <a href="{{ route('refill') }}" class="text-xs bg-[#E8F0FE] text-[#0B2F5C] font-bold px-3 py-1.5 rounded-full shadow-sm hover:bg-[#dbe7fd]">
+            <div class="sm:hidden flex items-center gap-1.5">
+                <a href="{{ route('refill') }}" class="text-[11px] bg-[#E8F0FE] text-[#0B2F5C] font-bold px-2.5 py-1.5 rounded-full shadow-sm active:scale-95 transition">
                     Refill ℞
                 </a>
-                <a href="{{ route('transfer') }}" class="text-xs bg-[#0B2F5C] hover:bg-[#071E3C] text-white font-bold px-3 py-1.5 rounded-full shadow-sm">
-                    Transfer ℞
+                <a href="{{ route('transfer') }}" class="text-[11px] bg-[#0B2F5C] text-white font-bold px-2.5 py-1.5 rounded-full shadow-sm active:scale-95 transition">
+                    Transfer
                 </a>
             </div>
         </div>
 
-        <!-- Mobile Menu Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/98 backdrop-blur-xl border-t border-slate-200/90 px-4 py-4 space-y-1.5 text-sm shadow-2xl transition-all">
-            <a href="{{ route('home') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('home') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+        <!-- Mobile Menu Backdrop Overlay -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 bg-[#071E3C]/60 backdrop-blur-sm z-[98] hidden md:hidden transition-opacity duration-300"></div>
+
+        <!-- Mobile Menu Drawer (Scrollable and Touch Friendly) -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-x-0 top-16 sm:top-20 max-h-[calc(100vh-5rem)] overflow-y-auto bg-white/98 backdrop-blur-2xl border-t border-slate-200/90 px-4 py-4 space-y-1 text-sm shadow-2xl z-[99] transition-all">
+            <a href="{{ route('home') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('home') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>Home</span>
                 @if(request()->routeIs('home'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
-            <a href="{{ route('about') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('about') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+            <a href="{{ route('about') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('about') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>About Us</span>
                 @if(request()->routeIs('about'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
-            <a href="{{ route('services') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('services') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
-                <span>Our Services</span>
+            <a href="{{ route('services') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('services') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+                <span>Our Services Overview</span>
                 @if(request()->routeIs('services'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
-            <a href="{{ route('dispill') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition pl-6 {{ request()->routeIs('dispill') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 font-normal text-xs' }}">
-                <span>&bull; Dis-Pill Blister Packs</span>
+            <div class="pl-3 py-1 space-y-1 border-l-2 border-[#0B2F5C]/15 ml-3 my-1">
+                <a href="{{ route('dispill') }}" class="mobile-nav-link flex items-center justify-between px-3 py-2 rounded-lg transition {{ request()->routeIs('dispill') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 text-xs' }}">
+                    <span>Dis-Pill Blister Packs</span>
+                    <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">Free</span>
+                </a>
+                <a href="{{ route('dmv') }}" class="mobile-nav-link flex items-center justify-between px-3 py-2 rounded-lg transition {{ request()->routeIs('dmv') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 text-xs' }}">
+                    <span>NY DMV Vision Screening &amp; Passports</span>
+                    <span class="text-[9px] bg-blue-100 text-[#0B2F5C] font-bold px-1.5 py-0.5 rounded">3 Mins</span>
+                </a>
+                <a href="{{ route('delivery') }}" class="mobile-nav-link flex items-center justify-between px-3 py-2 rounded-lg transition {{ request()->routeIs('delivery') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 text-xs' }}">
+                    <span>Free Local Bronx Delivery</span>
+                    <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">$0 Fee</span>
+                </a>
+            </div>
+            <a href="{{ route('vaccinations') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('vaccinations') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+                <span>Walk-In Vaccinations</span>
+                <span class="text-[10px] bg-[#C1272D] px-2 py-0.5 rounded text-white font-bold uppercase tracking-wider">No Appt</span>
             </a>
-            <a href="{{ route('dmv') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition pl-6 {{ request()->routeIs('dmv') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 font-normal text-xs' }}">
-                <span>&bull; NY DMV Eye Screening</span>
-            </a>
-            <a href="{{ route('delivery') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition pl-6 {{ request()->routeIs('delivery') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 font-normal text-xs' }}">
-                <span>&bull; Free Local Delivery</span>
-            </a>
-            <a href="{{ route('vaccinations') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('vaccinations') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
-                <span>Vaccinations</span>
-                <span class="text-[10px] bg-[#C1272D] px-2 py-0.5 rounded text-white font-bold uppercase tracking-wider">Walk-In</span>
-            </a>
-            <a href="{{ route('refill') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('refill') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+            <a href="{{ route('refill') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('refill') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>Refill Prescriptions</span>
                 @if(request()->routeIs('refill'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
-            <a href="{{ route('transfer') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('transfer') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+            <a href="{{ route('transfer') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('transfer') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>Transfer ℞ / New Patient</span>
                 @if(request()->routeIs('transfer'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
-            <a href="{{ route('faq') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('faq') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+            <a href="{{ route('faq') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('faq') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>Frequently Asked Questions</span>
                 @if(request()->routeIs('faq'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
-            <a href="{{ route('contact') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('contact') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
-                <span>Contact Us</span>
+            <a href="{{ route('contact') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('contact') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+                <span>Contact &amp; Store Hours</span>
                 @if(request()->routeIs('contact'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
 
-            <div class="pt-3 border-t border-slate-200/80 grid grid-cols-2 gap-2">
-                <a href="{{ route('refill') }}" class="flex items-center justify-center gap-1.5 bg-[#E8F0FE] text-[#0B2F5C] font-bold py-2.5 rounded-xl text-xs hover:bg-[#dbe7fd] transition">
+            <!-- Mobile Quick Action Buttons -->
+            <div class="pt-3 border-t border-slate-200/80 grid grid-cols-2 gap-2 pb-2">
+                <a href="{{ route('refill') }}" class="mobile-nav-link flex items-center justify-center gap-1.5 bg-[#E8F0FE] text-[#0B2F5C] font-bold py-3 rounded-xl text-xs hover:bg-[#dbe7fd] transition">
                     <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                    Refill ℞
+                    <span>Refill ℞</span>
                 </a>
-                <a href="{{ route('transfer') }}" class="flex items-center justify-center gap-1.5 bg-[#0B2F5C] text-white font-bold py-2.5 rounded-xl text-xs shadow-sm hover:bg-[#071E3C] transition">
-                    Transfer ℞
+                <a href="{{ route('transfer') }}" class="mobile-nav-link flex items-center justify-center gap-1.5 bg-[#0B2F5C] text-white font-bold py-3 rounded-xl text-xs shadow-sm hover:bg-[#071E3C] transition">
+                    <span>Transfer ℞</span>
                 </a>
+            </div>
+
+            <!-- Call & Directions Footer in Menu -->
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 px-1">
+                <a href="tel:7185388183" class="font-bold text-[#C1272D] hover:underline flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>(718) 538-8183</span>
+                </a>
+                <span>1018 Ogden Ave, Bronx</span>
             </div>
         </div>
     </nav>
@@ -290,7 +326,7 @@
     </div>
 
     <!-- Main Page Content Slot -->
-    <main class="flex-grow overflow-x-hidden">
+    <main class="flex-grow overflow-x-hidden pb-16 md:pb-0">
         @yield('content')
     </main>
 
@@ -381,11 +417,36 @@
         </div>
     </footer>
 
+    <!-- Mobile Sticky Bottom Action Bar (Fixed thumb-friendly navigation) -->
+    <aside aria-label="Mobile quick actions" class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-lg border-t border-slate-200/90 shadow-[0_-4px_25px_rgba(11,47,92,0.12)] md:hidden">
+        <div class="grid grid-cols-4 h-14 max-w-md mx-auto items-center px-1">
+            <a href="tel:7185388183" class="flex flex-col items-center justify-center gap-0.5 text-[#0B2F5C] active:text-[#C1272D] transition py-1 text-center group">
+                <div class="w-7 h-7 rounded-full bg-[#C1272D] text-white flex items-center justify-center shadow-sm group-active:scale-95 transition">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </div>
+                <span class="text-[10px] font-bold text-[#C1272D]">Call</span>
+            </a>
+            <a href="{{ route('refill') }}" class="flex flex-col items-center justify-center gap-0.5 {{ request()->routeIs('refill') ? 'text-[#C1272D]' : 'text-[#0B2F5C]' }} active:text-[#C1272D] transition py-1 text-center">
+                <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                <span class="text-[10px] font-bold">Refill ℞</span>
+            </a>
+            <a href="{{ route('transfer') }}" class="flex flex-col items-center justify-center gap-0.5 {{ request()->routeIs('transfer') ? 'text-[#C1272D]' : 'text-[#0B2F5C]' }} active:text-[#C1272D] transition py-1 text-center">
+                <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                <span class="text-[10px] font-bold">Transfer</span>
+            </a>
+            <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="flex flex-col items-center justify-center gap-0.5 text-[#0B2F5C] active:text-[#C1272D] transition py-1 text-center">
+                <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <span class="text-[10px] font-bold">Directions</span>
+            </a>
+        </div>
+    </aside>
+
     <!-- Mobile Drawer JS Toggle -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const btn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');
+            const backdrop = document.getElementById('mobile-menu-backdrop');
             const hamburgerIcon = document.getElementById('hamburger-icon');
             const closeIcon = document.getElementById('close-icon');
 
@@ -394,11 +455,15 @@
                     const isOpen = typeof open === 'boolean' ? open : menu.classList.contains('hidden');
                     if (isOpen) {
                         menu.classList.remove('hidden');
+                        if (backdrop) backdrop.classList.remove('hidden');
+                        document.body.classList.add('overflow-hidden');
                         btn.setAttribute('aria-expanded', 'true');
                         if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
                         if (closeIcon) closeIcon.classList.remove('hidden');
                     } else {
                         menu.classList.add('hidden');
+                        if (backdrop) backdrop.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
                         btn.setAttribute('aria-expanded', 'false');
                         if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
                         if (closeIcon) closeIcon.classList.add('hidden');
@@ -408,6 +473,19 @@
                 btn.addEventListener('click', function (e) {
                     e.stopPropagation();
                     toggleMenu();
+                });
+
+                if (backdrop) {
+                    backdrop.addEventListener('click', function () {
+                        toggleMenu(false);
+                    });
+                }
+
+                // Close menu when clicking any mobile nav link
+                document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        toggleMenu(false);
+                    });
                 });
 
                 document.addEventListener('click', function (e) {

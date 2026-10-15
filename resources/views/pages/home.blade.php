@@ -5,13 +5,13 @@
 
 @section('content')
 <!-- Hero Section (Goldberger-Inspired Layout: Photographic Background, Left Elevated Navy Card, Desktop Floating Proof, & 4 Circular Badges) -->
-<div class="relative flex min-h-[85vh] lg:min-h-[92vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+<div class="relative flex min-h-[auto] sm:min-h-[82vh] lg:min-h-[90vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
      style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.90) 0%, rgba(7, 30, 60, 0.65) 52%, rgba(7, 30, 60, 0.30) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-8 sm:pt-14 lg:pt-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
         
         <!-- Left: Elevated Navy Gradient Card (Goldberger Elevated Format) -->
-        <section class="w-full lg:max-w-2xl rounded-t-3xl bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-5 sm:p-8 lg:p-12 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-20 sm:pb-32 lg:pb-44">
+        <section class="w-full lg:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-5 sm:p-8 lg:p-12 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-14 sm:pb-28 lg:pb-40">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- 20-Year Milestone Pill Badge -->
@@ -21,7 +21,7 @@
                 </div>
 
                 <!-- Headline -->
-                <h1 class="text-2xl sm:text-4xl lg:text-[52px] font-extrabold font-display leading-[1.1] tracking-tight text-white">
+                <h1 class="text-2xl sm:text-4xl lg:text-[52px] font-extrabold font-display leading-[1.15] tracking-tight text-white break-words">
                     <span class="block">Your Trusted</span>
                     <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E8F0FE] to-sky-200">
                         Pharmacy Since 2006
@@ -46,38 +46,38 @@
                 </div>
 
                 <!-- 4 Circular Badges (Responsive Row) -->
-                <div class="grid grid-cols-4 gap-2 sm:gap-4 font-bold pt-3 sm:pt-4 border-t border-white/10">
+                <div class="grid grid-cols-4 gap-1.5 sm:gap-4 font-bold pt-3 sm:pt-4 border-t border-white/10">
                     
                     <!-- 1. Dis-Pill Packing -->
-                    <a href="{{ route('services') }}#packaging" class="flex flex-col items-center justify-center gap-1.5 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                    <a href="{{ route('services') }}#packaging" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
+                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
                             <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                         </div>
-                        <h4 class="text-[10px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Dis-Pill</h4>
+                        <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Dis-Pill</h4>
                     </a>
 
                     <!-- 2. Prescription -->
-                    <a href="{{ route('refill') }}" class="flex flex-col items-center justify-center gap-1.5 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#1A4FA0] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                    <a href="{{ route('refill') }}" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
+                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#1A4FA0] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
                             <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
-                        <h4 class="text-[10px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Refills</h4>
+                        <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Refills</h4>
                     </a>
 
                     <!-- 3. Walk-In Vaccines -->
-                    <a href="{{ route('vaccinations') }}" class="flex flex-col items-center justify-center gap-1.5 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-emerald-600 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                    <a href="{{ route('vaccinations') }}" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
+                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-emerald-600 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
                             <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                         </div>
-                        <h4 class="text-[10px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Vaccines</h4>
+                        <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Vaccines</h4>
                     </a>
 
                     <!-- 4. Fast Delivery -->
-                    <a href="{{ route('delivery') }}" class="flex flex-col items-center justify-center gap-1.5 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-amber-500 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                    <a href="{{ route('delivery') }}" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
+                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-amber-500 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
                             <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                         </div>
-                        <h4 class="text-[10px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Delivery</h4>
+                        <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Delivery</h4>
                     </a>
 
                 </div>
@@ -131,7 +131,7 @@
 </div>
 
 <!-- 3-Box Floating Feature Strip (Crimson #C1272D + Primary Navy #0B2F5C + Deep Navy #071E3C) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-12 sm:-mt-20 lg:-mt-32 relative z-30 mb-12 sm:mb-16">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-8 sm:-mt-16 lg:-mt-28 relative z-30 mb-10 sm:mb-16">
     <div class="flex flex-col lg:flex-row text-white shadow-2xl rounded-2xl lg:rounded-3xl overflow-hidden">
         
         <!-- Section 1: Crimson Red (Call Us At) -->
