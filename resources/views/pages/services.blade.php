@@ -52,7 +52,7 @@
         <div class="hidden xl:flex flex-col gap-4 pb-36 z-10 max-w-xs">
             <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
                 <div class="w-10 h-10 rounded-xl bg-[#C1272D] text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
-                    🚚
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                 </div>
                 <div>
                     <strong class="block text-slate-900 font-bold text-xs sm:text-sm">Free Local Delivery</strong>
@@ -61,7 +61,7 @@
             </div>
             <div class="flex items-center gap-3.5 bg-[#071E3C]/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/10 text-white">
                 <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base shrink-0">
-                    👁
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </div>
                 <div>
                     <strong class="block text-white font-bold text-xs sm:text-sm">DMV Eye Exams</strong>
@@ -78,10 +78,10 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         
         <!-- Highlight 1: Free Delivery -->
-        <div class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
+        <a href="{{ route('delivery') }}" class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300 group">
             <div class="space-y-3">
-                <div class="w-11 h-11 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg shadow-sm">
-                    🚚
+                <div class="w-11 h-11 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-110 transition">
+                    <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                 </div>
                 <h3 class="text-base sm:text-lg font-bold text-[#0B2F5C] font-display">Free Local Delivery</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">
@@ -89,16 +89,16 @@
                 </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-bold text-emerald-700">100% Free</span>
+                <span class="text-[11px] font-bold text-emerald-700">100% Free Service &rarr;</span>
                 <div class="w-12 h-1 bg-amber-500 rounded-full"></div>
             </div>
-        </div>
+        </a>
 
         <!-- Highlight 2: Dis-Pill Packaging -->
-        <div class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
+        <a href="{{ route('dispill') }}" class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300 group">
             <div class="space-y-3">
-                <div class="w-11 h-11 rounded-2xl bg-blue-50 text-[#0B2F5C] flex items-center justify-center font-bold text-lg shadow-sm">
-                    📦
+                <div class="w-11 h-11 rounded-2xl bg-blue-50 text-[#0B2F5C] flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-110 transition">
+                    <svg class="w-5 h-5 text-[#0B2F5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                 </div>
                 <h3 class="text-base sm:text-lg font-bold text-[#0B2F5C] font-display">Dis-Pill Packaging</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">
@@ -106,16 +106,16 @@
                 </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-bold text-[#0B2F5C]">Senior Care</span>
+                <span class="text-[11px] font-bold text-[#0B2F5C]">Senior Care Guide &rarr;</span>
                 <div class="w-12 h-1 bg-[#0B2F5C] rounded-full"></div>
             </div>
-        </div>
+        </a>
 
         <!-- Highlight 3: DMV Vision Test -->
-        <div class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
+        <a href="{{ route('dmv') }}" class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300 group">
             <div class="space-y-3">
-                <div class="w-11 h-11 rounded-2xl bg-indigo-50 text-[#1A4FA0] flex items-center justify-center font-bold text-lg shadow-sm">
-                    👁
+                <div class="w-11 h-11 rounded-2xl bg-indigo-50 text-[#1A4FA0] flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-110 transition">
+                    <svg class="w-5 h-5 text-[#1A4FA0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </div>
                 <h3 class="text-base sm:text-lg font-bold text-[#0B2F5C] font-display">DMV Eye Screening</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">
@@ -123,16 +123,16 @@
                 </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-bold text-[#1A4FA0]">No Appt Needed</span>
+                <span class="text-[11px] font-bold text-[#1A4FA0]">3-Min Walk-In &rarr;</span>
                 <div class="w-12 h-1 bg-[#1A4FA0] rounded-full"></div>
             </div>
-        </div>
+        </a>
 
         <!-- Highlight 4: Full Toy Store -->
-        <div class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
+        <a href="#toys" class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300 group">
             <div class="space-y-3">
-                <div class="w-11 h-11 rounded-2xl bg-red-50 text-[#C1272D] flex items-center justify-center font-bold text-lg shadow-sm">
-                    🧸
+                <div class="w-11 h-11 rounded-2xl bg-red-50 text-[#C1272D] flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-110 transition">
+                    <svg class="w-5 h-5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <h3 class="text-base sm:text-lg font-bold text-[#0B2F5C] font-display">Toy Department</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">
@@ -140,10 +140,10 @@
                 </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-bold text-[#C1272D]">Family Store</span>
+                <span class="text-[11px] font-bold text-[#C1272D]">Family Store &rarr;</span>
                 <div class="w-12 h-1 bg-[#C1272D] rounded-full"></div>
             </div>
-        </div>
+        </a>
 
     </div>
 </div>
@@ -169,7 +169,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xl shadow-sm">
-                            🚚
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">Free Service</span>
                     </div>
@@ -185,8 +185,8 @@
                 </div>
                 <div>
                     <div class="mt-6 w-full h-1 bg-amber-500 rounded-full mb-3"></div>
-                    <a href="tel:7185388183" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
-                        <span>Schedule Delivery: (718) 538-8183</span>
+                    <a href="{{ route('delivery') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
+                        <span>View Delivery Areas &amp; Schedule</span>
                         <span>&rarr;</span>
                     </a>
                 </div>
@@ -197,7 +197,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-blue-50 text-[#0B2F5C] flex items-center justify-center font-bold text-xl shadow-sm">
-                            📦
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-[#E8F0FE] text-[#1A4FA0] px-3 py-1 rounded-full uppercase tracking-wider">Senior Care</span>
                     </div>
@@ -213,8 +213,8 @@
                 </div>
                 <div>
                     <div class="mt-6 w-full h-1 bg-[#0B2F5C] rounded-full mb-3"></div>
-                    <a href="tel:7185388183" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
-                        <span>Inquire About Dis-Pill Setup</span>
+                    <a href="{{ route('dispill') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
+                        <span>Learn About Dis-Pill Setup</span>
                         <span>&rarr;</span>
                     </a>
                 </div>
@@ -225,7 +225,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-xl shadow-sm">
-                            💉
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">Walk-In</span>
                     </div>
@@ -253,7 +253,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-[#1A4FA0] flex items-center justify-center font-bold text-xl shadow-sm">
-                            👁
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-indigo-100 text-indigo-900 px-3 py-1 rounded-full uppercase tracking-wider">NY Approved</span>
                     </div>
@@ -269,7 +269,9 @@
                 </div>
                 <div>
                     <div class="mt-6 w-full h-1 bg-[#1A4FA0] rounded-full mb-3"></div>
-                    <span class="text-xs font-bold text-[#0B2F5C]">Walk-In Anytime with Driver License</span>
+                    <a href="{{ route('dmv') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
+                        <span>DMV Screening Guide &rarr;</span>
+                    </a>
                 </div>
             </div>
 
@@ -278,7 +280,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-700 flex items-center justify-center font-bold text-xl shadow-sm">
-                            📷
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h3.28a1 1 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-sky-100 text-sky-900 px-3 py-1 rounded-full uppercase tracking-wider">Instant</span>
                     </div>
@@ -303,7 +305,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-700 flex items-center justify-center font-bold text-xl shadow-sm">
-                            ⚖
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-purple-100 text-purple-900 px-3 py-1 rounded-full uppercase tracking-wider">Official</span>
                     </div>
@@ -328,7 +330,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-red-50 text-[#C1272D] flex items-center justify-center font-bold text-xl shadow-sm">
-                            🧸
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-red-100 text-[#9B1E23] px-3 py-1 rounded-full uppercase tracking-wider">Family Favorite</span>
                     </div>
@@ -353,7 +355,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xl shadow-sm">
-                            💳
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">Insurance Benefit</span>
                     </div>
@@ -378,7 +380,7 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-red-50 text-[#C1272D] flex items-center justify-center font-bold text-xl shadow-sm">
-                            🔄
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                         </div>
                         <span class="text-[11px] font-bold bg-red-100 text-[#9B1E23] px-3 py-1 rounded-full uppercase tracking-wider">Seamless</span>
                     </div>
@@ -392,7 +394,11 @@
                         <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Direct insurance verification</li>
                     </ul>
                 </div>
-                <div>
+                <div class="flex items-center gap-3">
+                    <div class="mt-6 w-full h-1 bg-[#C1272D] rounded-full mb-3"></div>
+                    <a href="{{ route('refill') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] whitespace-nowrap">Refill ℞ &rarr;</a>
+                </div>
+            </div>
                     <div class="mt-6 w-full h-1 bg-[#C1272D] rounded-full mb-3"></div>
                     <a href="{{ route('transfer') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
                         <span>Transfer ℞ Online</span>

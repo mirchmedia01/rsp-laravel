@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactInquiry;
+use App\Models\PrescriptionRefill;
 use App\Models\PrescriptionTransfer;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -45,6 +46,68 @@ class PharmacyController extends Controller
     public function services(): View
     {
         return view('pages.services');
+    }
+
+    /**
+     * Dedicated Dis-Pill Multi-Dose Packaging inner page.
+     */
+    public function dispill(): View
+    {
+        return view('pages.dispill');
+    }
+
+    /**
+     * Dedicated NY DMV Vision Screening & License Renewal inner page.
+     */
+    public function dmvVision(): View
+    {
+        return view('pages.dmv');
+    }
+
+    /**
+     * Dedicated Free Prescription Delivery across South Bronx inner page.
+     */
+    public function delivery(): View
+    {
+        return view('pages.delivery');
+    }
+
+    /**
+     * Prescription Refill request page.
+     */
+    public function refill(): View
+    {
+        return view('pages.refill');
+    }
+
+    /**
+     * Store submitted Prescription Refill request.
+     */
+    public function storeRefill(Request $request): RedirectResponse
+    {
+        $validated = $request->validate([
+            'first_name' => 'required|string|max:100',
+            'last_name' => 'required|string|max:100',
+            'dob' => 'nullable|date',
+            'phone' => 'required|string|max:30',
+            'email' => 'nullable|email|max:120',
+            'rx_numbers' => 'required|string|max:2000',
+            'delivery_method' => 'required|string|in:pickup,delivery',
+            'delivery_address' => 'nullable|string|max:255',
+            'notes' => 'nullable|string|max:2000',
+        ]);
+
+        PrescriptionRefill::create($validated);
+
+        return redirect()->route('refill')->with('success', 'Thank you! Your prescription refill request has been received. Our pharmacy team is preparing your medications. We will notify you once they are ready for pickup or out for free delivery.');
+    }
+
+    /**
+     * Dedicated FAQ page.
+     */
+    public function faq(): View
+    {
+        return view('pages.faq');
     }
 
     /**

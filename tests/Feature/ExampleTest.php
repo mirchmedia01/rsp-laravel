@@ -23,14 +23,47 @@ class ExampleTest extends TestCase
         $response = $this->get('/services');
         $response->assertStatus(200);
 
+        $response = $this->get('/services/dispill');
+        $response->assertStatus(200);
+
+        $response = $this->get('/services/dmv-vision-test');
+        $response->assertStatus(200);
+
+        $response = $this->get('/services/delivery');
+        $response->assertStatus(200);
+
+        $response = $this->get('/refill');
+        $response->assertStatus(200);
+
         $response = $this->get('/vaccinations');
         $response->assertStatus(200);
 
         $response = $this->get('/transfer');
         $response->assertStatus(200);
 
+        $response = $this->get('/faq');
+        $response->assertStatus(200);
+
         $response = $this->get('/contact');
         $response->assertStatus(200);
+    }
+
+    public function test_prescription_refill_submission(): void
+    {
+        $response = $this->post('/refill', [
+            'first_name' => 'Maria',
+            'last_name' => 'Rodriguez',
+            'dob' => '1985-05-15',
+            'phone' => '(718) 555-0123',
+            'email' => 'maria@example.com',
+            'rx_numbers' => '6543210, 6543211',
+            'delivery_method' => 'delivery',
+            'delivery_address' => '1020 Ogden Ave, Apt 4B, Bronx NY 10452',
+            'notes' => 'Please package in Dis-Pill blisters',
+        ]);
+
+        $response->assertRedirect('/refill');
+        $response->assertSessionHas('success');
     }
 
     public function test_prescription_transfer_submission(): void

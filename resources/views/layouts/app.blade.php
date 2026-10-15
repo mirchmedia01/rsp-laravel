@@ -86,8 +86,9 @@
 
             <!-- Right Reviews & Language -->
             <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <span class="bg-white/10 px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-semibold text-white/95 whitespace-nowrap">
-                    🇺🇸 English &bull; 🇪🇸 Se Habla Español
+                <span class="bg-white/10 px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold text-white/95 whitespace-nowrap inline-flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-[#E8F0FE]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    <span>English &bull; Se Habla Español</span>
                 </span>
                 <div class="flex items-center gap-1 text-white">
                     <div class="flex text-amber-300">
@@ -95,7 +96,11 @@
                             <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         @endfor
                     </div>
-                    <span class="text-[10px] sm:text-[11px] text-white/90"><b>4.5★</b> (39)</span>
+                    <span class="text-[10px] sm:text-[11px] text-white/90 font-bold inline-flex items-center gap-1">
+                        <span>4.5</span>
+                        <svg class="w-3 h-3 text-amber-300 fill-current inline" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <span class="font-normal text-white/80">(39)</span>
+                    </span>
                 </div>
                 <!-- Google Review Circle Button -->
                 <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white text-[#0B2F5C] flex items-center justify-center hover:scale-105 transition shadow-sm" title="Google Reviews">
@@ -125,43 +130,61 @@
             </div>
 
             <!-- Center: Navigation Links in Deep Navy (#0B2F5C) -->
-            <div class="hidden md:flex items-center gap-5 lg:gap-8 text-sm font-semibold">
+            <div class="hidden md:flex items-center gap-4 lg:gap-7 text-sm font-semibold">
                 <a href="{{ route('home') }}" class="py-2 transition {{ request()->routeIs('home') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
                     Home
                 </a>
                 <a href="{{ route('about') }}" class="py-2 transition {{ request()->routeIs('about') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
                     About Us
                 </a>
-                <a href="{{ route('services') }}" class="py-2 transition {{ request()->routeIs('services') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
-                    Our Services
-                </a>
+
+                <!-- Services Dropdown / Link -->
+                <div class="relative group py-2">
+                    <a href="{{ route('services') }}" class="inline-flex items-center gap-1 transition {{ request()->routeIs('services*') || request()->routeIs('dispill') || request()->routeIs('dmv') || request()->routeIs('delivery') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
+                        <span>Services</span>
+                        <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0B2F5C] group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white rounded-2xl shadow-2xl border border-slate-100 p-2 z-50 animate-fadeIn">
+                        <a href="{{ route('services') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">All Services Overview</a>
+                        <a href="{{ route('dispill') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">Dis-Pill Blister Packs</a>
+                        <a href="{{ route('dmv') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">NY DMV Vision Screening</a>
+                        <a href="{{ route('delivery') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">Free South Bronx Delivery</a>
+                    </div>
+                </div>
+
                 <a href="{{ route('vaccinations') }}" class="py-2 transition flex items-center gap-1.5 {{ request()->routeIs('vaccinations') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
                     <span>Vaccinations</span>
                     <span class="text-[9px] font-black uppercase px-1.5 py-0.5 rounded bg-[#C1272D] text-white tracking-wider">Walk-In</span>
                 </a>
+                <a href="{{ route('refill') }}" class="py-2 transition {{ request()->routeIs('refill') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
+                    Refill ℞
+                </a>
+                <a href="{{ route('faq') }}" class="py-2 transition {{ request()->routeIs('faq') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
+                    FAQ
+                </a>
                 <a href="{{ route('contact') }}" class="py-2 transition {{ request()->routeIs('contact') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
-                    Contact Us
+                    Contact
                 </a>
             </div>
 
             <!-- Right: Action Buttons (Desktop) -->
             <div class="hidden sm:flex items-center gap-2.5 lg:gap-3">
-                <!-- Refill / Call Pill Button -->
-                <a href="tel:7185388183" class="inline-flex items-center gap-2 bg-white border border-[#0B2F5C]/20 hover:border-[#0B2F5C] text-[#0B2F5C] text-xs font-bold px-3.5 lg:px-4 py-2.5 rounded-full transition hover:bg-[#E8F0FE]/50 shadow-sm">
-                    <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    Refill Your ℞
+                <!-- Refill Button -->
+                <a href="{{ route('refill') }}" class="inline-flex items-center gap-2 bg-white border border-[#0B2F5C]/20 hover:border-[#0B2F5C] text-[#0B2F5C] text-xs font-bold px-3.5 lg:px-4 py-2.5 rounded-full transition hover:bg-[#E8F0FE]/50 shadow-sm">
+                    <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    Refill ℞
                 </a>
                 <!-- New Patient / Transfer Rx Accent Button (Navy #0B2F5C) -->
                 <a href="{{ route('transfer') }}" class="inline-flex items-center gap-2 bg-[#0B2F5C] hover:bg-[#071E3C] text-white text-xs font-bold px-4 lg:px-5 py-2.5 rounded-full transition shadow-md hover:scale-105">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
-                    New Patient
+                    Transfer ℞
                 </a>
             </div>
 
             <!-- Mobile Quick Actions -->
             <div class="sm:hidden flex items-center gap-2">
-                <a href="tel:7185388183" class="w-9 h-9 rounded-full bg-[#E8F0FE] text-[#0B2F5C] flex items-center justify-center shadow-sm" aria-label="Call Pharmacy">
-                    <svg class="w-4 h-4 text-[#C1272D]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
+                <a href="{{ route('refill') }}" class="text-xs bg-[#E8F0FE] text-[#0B2F5C] font-bold px-3 py-1.5 rounded-full shadow-sm hover:bg-[#dbe7fd]">
+                    Refill ℞
                 </a>
                 <a href="{{ route('transfer') }}" class="text-xs bg-[#0B2F5C] hover:bg-[#071E3C] text-white font-bold px-3 py-1.5 rounded-full shadow-sm">
                     Transfer ℞
@@ -189,9 +212,24 @@
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
+            <a href="{{ route('dispill') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition pl-6 {{ request()->routeIs('dispill') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 font-normal text-xs' }}">
+                <span>&bull; Dis-Pill Blister Packs</span>
+            </a>
+            <a href="{{ route('dmv') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition pl-6 {{ request()->routeIs('dmv') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 font-normal text-xs' }}">
+                <span>&bull; NY DMV Eye Screening</span>
+            </a>
+            <a href="{{ route('delivery') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition pl-6 {{ request()->routeIs('delivery') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 font-normal text-xs' }}">
+                <span>&bull; Free Local Delivery</span>
+            </a>
             <a href="{{ route('vaccinations') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('vaccinations') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>Vaccinations</span>
                 <span class="text-[10px] bg-[#C1272D] px-2 py-0.5 rounded text-white font-bold uppercase tracking-wider">Walk-In</span>
+            </a>
+            <a href="{{ route('refill') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('refill') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+                <span>Refill Prescriptions</span>
+                @if(request()->routeIs('refill'))
+                    <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
+                @endif
             </a>
             <a href="{{ route('transfer') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('transfer') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
                 <span>Transfer ℞ / New Patient</span>
@@ -199,17 +237,23 @@
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
+            <a href="{{ route('faq') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('faq') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
+                <span>Frequently Asked Questions</span>
+                @if(request()->routeIs('faq'))
+                    <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
+                @endif
+            </a>
             <a href="{{ route('contact') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('contact') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
-                <span>Contact Us &amp; FAQs</span>
+                <span>Contact Us</span>
                 @if(request()->routeIs('contact'))
                     <span class="w-2 h-2 rounded-full bg-[#C1272D]"></span>
                 @endif
             </a>
 
             <div class="pt-3 border-t border-slate-200/80 grid grid-cols-2 gap-2">
-                <a href="tel:7185388183" class="flex items-center justify-center gap-1.5 bg-[#E8F0FE] text-[#0B2F5C] font-bold py-2.5 rounded-xl text-xs hover:bg-[#dbe7fd] transition">
-                    <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
-                    Call Pharmacy
+                <a href="{{ route('refill') }}" class="flex items-center justify-center gap-1.5 bg-[#E8F0FE] text-[#0B2F5C] font-bold py-2.5 rounded-xl text-xs hover:bg-[#dbe7fd] transition">
+                    <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    Refill ℞
                 </a>
                 <a href="{{ route('transfer') }}" class="flex items-center justify-center gap-1.5 bg-[#0B2F5C] text-white font-bold py-2.5 rounded-xl text-xs shadow-sm hover:bg-[#071E3C] transition">
                     Transfer ℞
@@ -228,7 +272,8 @@
                 </p>
                 <span class="text-[#1A4FA0]/40">•</span>
                 <p class="inline-flex items-center gap-2">
-                    <span class="font-bold text-[#1A4FA0]">⭐ 20th Anniversary (2006–2026):</span> Two decades of serving the South Bronx &amp; Highbridge community with pride and trust.
+                    <svg class="w-3.5 h-3.5 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <span class="font-bold text-[#1A4FA0]">20th Anniversary (2006–2026):</span> Two decades of serving the South Bronx &amp; Highbridge community with pride and trust.
                 </p>
                 <span class="text-[#1A4FA0]/40">•</span>
                 <p class="inline-flex items-center gap-2">
@@ -237,7 +282,8 @@
                 </p>
                 <span class="text-[#1A4FA0]/40">•</span>
                 <p class="inline-flex items-center gap-2">
-                    <span class="font-bold text-[#1A4FA0]">⭐ 20th Anniversary (2006–2026):</span> Two decades of serving the South Bronx &amp; Highbridge community with pride and trust.
+                    <svg class="w-3.5 h-3.5 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <span class="font-bold text-[#1A4FA0]">20th Anniversary (2006–2026):</span> Two decades of serving the South Bronx &amp; Highbridge community with pride and trust.
                 </p>
             </div>
         </a>
@@ -269,8 +315,10 @@
                         <li><a href="{{ route('about') }}" class="hover:text-white transition">About Us</a></li>
                         <li><a href="{{ route('services') }}" class="hover:text-white transition">Our Services</a></li>
                         <li><a href="{{ route('vaccinations') }}" class="hover:text-white transition">Walk-In Vaccinations</a></li>
+                        <li><a href="{{ route('refill') }}" class="hover:text-white transition">Refill Prescriptions</a></li>
                         <li><a href="{{ route('transfer') }}" class="hover:text-white transition">Transfer ℞ &amp; New Patient</a></li>
-                        <li><a href="{{ route('contact') }}" class="hover:text-white transition">Contact Us &amp; FAQ</a></li>
+                        <li><a href="{{ route('faq') }}" class="hover:text-white transition">Frequently Asked Questions</a></li>
+                        <li><a href="{{ route('contact') }}" class="hover:text-white transition">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -278,13 +326,13 @@
                 <div>
                     <h4 class="text-white font-bold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4">Our Services</h4>
                     <ul class="space-y-2 sm:space-y-2.5 text-xs sm:text-sm text-slate-400">
-                        <li>Multi-Dose &amp; Dis-Pill Blister Packing</li>
-                        <li>Walk-In Flu &amp; COVID-19 Vaccinations</li>
-                        <li>NY DMV Vision Eye Exams</li>
-                        <li>Official 2x2 Passport Photos</li>
-                        <li>Licensed Notary Public &amp; 10¢ Copies</li>
-                        <li>Free Neighborhood Prescription Delivery</li>
-                        <li>Full In-Store Toy Department &amp; OTC</li>
+                        <li><a href="{{ route('dispill') }}" class="hover:text-white transition">Multi-Dose &amp; Dis-Pill Blister Packing</a></li>
+                        <li><a href="{{ route('vaccinations') }}" class="hover:text-white transition">Walk-In Flu &amp; COVID-19 Vaccinations</a></li>
+                        <li><a href="{{ route('dmv') }}" class="hover:text-white transition">NY DMV Vision Eye Exams</a></li>
+                        <li><a href="{{ route('delivery') }}" class="hover:text-white transition">Free Neighborhood Prescription Delivery</a></li>
+                        <li><a href="{{ route('dmv') }}#passport" class="hover:text-white transition">Official 2x2 Passport Photos</a></li>
+                        <li><a href="{{ route('dmv') }}#notary" class="hover:text-white transition">Licensed Notary Public &amp; 10¢ Copies</a></li>
+                        <li><a href="{{ route('services') }}#toys" class="hover:text-white transition">Full In-Store Toy Department &amp; OTC</a></li>
                     </ul>
                 </div>
 
