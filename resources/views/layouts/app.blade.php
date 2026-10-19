@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', "R & S Pioneer Pharmacy | Trusted Pharmacy Services Since 2006")</title>
-    <meta name="description" content="@yield('meta_description', 'Established in 2006, R & S Pioneer Pharmacy has served the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, passport photos, DMV vision tests, and free delivery.')">
+    <meta name="description" content="@yield('meta_description', 'Established in 2006, R & S Pioneer Pharmacy has served the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, passport photos, DMV vision tests, and notary services.')">
     <meta name="theme-color" content="#0B2F5C">
 
     <!-- Favicon -->
@@ -158,7 +158,7 @@
 
                 <!-- Services Dropdown / Link -->
                 <div class="relative group py-2">
-                    <a href="{{ route('services') }}" class="inline-flex items-center gap-1 transition {{ request()->routeIs('services*') || request()->routeIs('dispill') || request()->routeIs('dmv') || request()->routeIs('delivery') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
+                    <a href="{{ route('services') }}" class="inline-flex items-center gap-1 transition {{ request()->routeIs('services*') || request()->routeIs('dispill') || request()->routeIs('dmv') ? 'border-b-2 border-[#C1272D] text-[#0B2F5C] font-bold' : 'text-[#0B2F5C]/80 hover:text-[#0B2F5C]' }}">
                         <span>Services</span>
                         <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0B2F5C] group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </a>
@@ -166,7 +166,7 @@
                         <a href="{{ route('services') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">All Services Overview</a>
                         <a href="{{ route('dispill') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">Dis-Pill Blister Packs</a>
                         <a href="{{ route('dmv') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">NY DMV Vision Screening</a>
-                        <a href="{{ route('delivery') }}" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">Free South Bronx Delivery</a>
+                        <a href="{{ route('dmv') }}#notary" class="block px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-[#E8F0FE] hover:text-[#0B2F5C] transition">Notary Public &amp; Copies</a>
                     </div>
                 </div>
 
@@ -242,9 +242,9 @@
                     <span>NY DMV Vision Screening &amp; Passports</span>
                     <span class="text-[9px] bg-blue-100 text-[#0B2F5C] font-bold px-1.5 py-0.5 rounded">3 Mins</span>
                 </a>
-                <a href="{{ route('delivery') }}" class="mobile-nav-link flex items-center justify-between px-3 py-2 rounded-lg transition {{ request()->routeIs('delivery') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-600 hover:bg-slate-50 text-xs' }}">
-                    <span>Free Local Bronx Delivery</span>
-                    <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">$0 Fee</span>
+                <a href="{{ route('dmv') }}#notary" class="mobile-nav-link flex items-center justify-between px-3 py-2 rounded-lg transition text-slate-600 hover:bg-slate-50 text-xs">
+                    <span>Notary Public, Fax &amp; Copies</span>
+                    <span class="text-[9px] bg-amber-100 text-amber-800 font-bold px-1.5 py-0.5 rounded">Walk-In</span>
                 </a>
             </div>
             <a href="{{ route('vaccinations') }}" class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('vaccinations') ? 'bg-[#E8F0FE] text-[#0B2F5C] font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium' }}">
@@ -365,9 +365,8 @@
                         <li><a href="{{ route('dispill') }}" class="hover:text-white transition">Multi-Dose &amp; Dis-Pill Blister Packing</a></li>
                         <li><a href="{{ route('vaccinations') }}" class="hover:text-white transition">Walk-In Flu &amp; COVID-19 Vaccinations</a></li>
                         <li><a href="{{ route('dmv') }}" class="hover:text-white transition">NY DMV Vision Eye Exams</a></li>
-                        <li><a href="{{ route('delivery') }}" class="hover:text-white transition">Free Neighborhood Prescription Delivery</a></li>
                         <li><a href="{{ route('dmv') }}#passport" class="hover:text-white transition">Official 2x2 Passport Photos</a></li>
-                        <li><a href="{{ route('dmv') }}#notary" class="hover:text-white transition">Licensed Notary Public &amp; 10¢ Copies</a></li>
+                        <li><a href="{{ route('dmv') }}#notary" class="hover:text-white transition">Licensed Notary Public, Fax &amp; Copy Services</a></li>
                         <li><a href="{{ route('services') }}#toys" class="hover:text-white transition">Full In-Store Toy Department &amp; OTC</a></li>
                     </ul>
                 </div>

@@ -29,9 +29,6 @@ class ExampleTest extends TestCase
         $response = $this->get('/services/dmv-vision-test');
         $response->assertStatus(200);
 
-        $response = $this->get('/services/delivery');
-        $response->assertStatus(200);
-
         $response = $this->get('/refill');
         $response->assertStatus(200);
 
@@ -57,8 +54,6 @@ class ExampleTest extends TestCase
             'phone' => '(718) 555-0123',
             'email' => 'maria@example.com',
             'rx_numbers' => '6543210, 6543211',
-            'delivery_method' => 'delivery',
-            'delivery_address' => '1020 Ogden Ave, Apt 4B, Bronx NY 10452',
             'notes' => 'Please package in Dis-Pill blisters',
         ]);
 
@@ -80,7 +75,7 @@ class ExampleTest extends TestCase
             'medications_or_rx_numbers' => 'Transfer all my active maintenance medications',
             'doctor_name' => 'Dr. Smith',
             'insurance_name' => 'Healthfirst Medicaid',
-            'special_notes' => 'Please package into Dis-Pill blister cards and deliver to my apartment',
+            'special_notes' => 'Please package into Dis-Pill blister cards for in-store pickup',
         ]);
 
         $response->assertRedirect('/transfer');

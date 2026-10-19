@@ -41,7 +41,7 @@ class PharmacyController extends Controller
 
     /**
      * Services page: Dis-Pill / Multi-dose packaging, DMV vision exam,
-     * passport photos, notary, fax/copy, free delivery, OTC & toy section.
+     * passport photos, notary, fax/copy, OTC & toy section.
      */
     public function services(): View
     {
@@ -65,14 +65,6 @@ class PharmacyController extends Controller
     }
 
     /**
-     * Dedicated Free Prescription Delivery across South Bronx inner page.
-     */
-    public function delivery(): View
-    {
-        return view('pages.delivery');
-    }
-
-    /**
      * Prescription Refill request page.
      */
     public function refill(): View
@@ -92,14 +84,14 @@ class PharmacyController extends Controller
             'phone' => 'required|string|max:30',
             'email' => 'nullable|email|max:120',
             'rx_numbers' => 'required|string|max:2000',
-            'delivery_method' => 'required|string|in:pickup,delivery',
+            'delivery_method' => 'nullable|string|max:50',
             'delivery_address' => 'nullable|string|max:255',
             'notes' => 'nullable|string|max:2000',
         ]);
 
         PrescriptionRefill::create($validated);
 
-        return redirect()->route('refill')->with('success', 'Thank you! Your prescription refill request has been received. Our pharmacy team is preparing your medications. We will notify you once they are ready for pickup or out for free delivery.');
+        return redirect()->route('refill')->with('success', 'Thank you! Your prescription refill request has been received. Our pharmacy team is preparing your medications. We will notify you once they are ready for in-store pickup at 1018 Ogden Ave.');
     }
 
     /**

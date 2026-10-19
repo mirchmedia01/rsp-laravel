@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact Us - We\'re Here to Help | R & S Pioneer Pharmacy Bronx NY')
-@section('meta_description', 'Visit R & S Pioneer Pharmacy at 1018 Ogden Ave, Bronx NY 10452. Open 7 days a week. Call (718) 538-8183 for refills, free delivery, or questions.')
+@section('meta_description', 'Visit R & S Pioneer Pharmacy at 1018 Ogden Ave, Bronx NY 10452. Open 7 days a week. Call (718) 538-8183 for refills, vaccines, or questions.')
 
 @section('content')
 <!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
@@ -30,7 +30,7 @@
 
                 <!-- Subtitle with Official Motto -->
                 <p class="text-slate-200 text-xs sm:text-sm sm:leading-relaxed font-sans max-w-2xl">
-                    Whether you have questions about prescription refills, Dis-Pill blister packaging, free Bronx delivery, or walk-in vaccines, we're here to help: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                    Whether you have questions about prescription refills, Dis-Pill blister packaging, DMV vision tests, or walk-in vaccines, we're here to help: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Buttons -->
@@ -117,22 +117,22 @@
             </div>
         </div>
 
-        <!-- Box 3: Free Local Delivery -->
+        <!-- Box 3: Fax, Copy & DMV Services -->
         <div class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
             <div class="space-y-3">
                 <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xl shadow-sm">
-                    <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                    <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">Free Local Delivery</h3>
+                <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">DMV &amp; Document Care</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Can't make it to the pharmacy? We deliver all prescription medications and health supplies right to your home for free.
+                    Walk in for official NY DMV vision tests, certified Notary Public, 2x2 passport photos, and fast photocopy &amp; fax services.
                 </p>
                 <div class="pt-1">
-                    <span class="text-xs font-bold text-emerald-700">Same-Day &amp; Next-Day Service</span>
+                    <span class="text-xs font-bold text-[#0B2F5C]">No Appointments Needed</span>
                 </div>
             </div>
             <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-700">South Bronx Wide</span>
+                <span class="text-xs font-bold text-[#0B2F5C]">Walk-Ins Welcome</span>
                 <div class="w-12 h-1 bg-amber-500 rounded-full"></div>
             </div>
         </div>
@@ -253,7 +253,7 @@
                         <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#C1272D]">Ask a Pharmacist</span>
                         <h2 class="text-xl sm:text-3xl font-bold font-display text-slate-900 mt-1">Send Us a Message</h2>
                         <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed">
-                            Have a question about medication availability, prior authorizations, delivery, or general wellness? Fill in your details below.
+                            Have a question about medication availability, prior authorizations, vaccinations, or general wellness? Fill in your details below.
                         </p>
                     </div>
 
@@ -290,7 +290,7 @@
                                     <option value="Prescription Refill / Transfer">Prescription Refill / Transfer</option>
                                     <option value="Dis-Pill Blister Packaging">Dis-Pill Blister Packaging</option>
                                     <option value="Walk-In Vaccination Inquiry">Walk-In Vaccination Inquiry</option>
-                                    <option value="Free Local Delivery Request">Free Local Delivery Request</option>
+                                    <option value="Store Hours &amp; Location">Store Hours &amp; Location</option>
                                     <option value="DMV Exam / Passport Photo / Notary">DMV Exam / Passport Photo / Notary</option>
                                 </select>
                             </div>
@@ -347,15 +347,16 @@
             Visit R &amp; S Pioneer Pharmacy in Highbridge
         </h2>
         <p class="max-w-2xl mx-auto text-slate-200 text-xs sm:text-base leading-relaxed">
-            1018 Ogden Ave, Bronx NY 10452 &bull; Call (718) 538-8183 for refills, free delivery, or questions.
+            1018 Ogden Ave, Bronx NY 10452 &bull; Call (718) 538-8183 for refills, vaccines, or questions.
         </p>
         <div class="pt-2 flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4">
             <a href="tel:7185388183" class="rounded-full bg-white text-[#0B2F5C] font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-[#E8F0FE] transition shadow hover:scale-105">
                 <span>Call (718) 538-8183</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="{{ route('transfer') }}" class="rounded-full border border-white text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-white hover:text-[#0B2F5C] transition shadow">
+            <a href="{{ route('transfer') }}" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all">
                 <span>Transfer ℞ Online</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
     </div>

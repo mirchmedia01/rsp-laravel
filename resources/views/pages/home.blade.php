@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('title', "R & S Pioneer Pharmacy | Trusted Pharmacy Services Since 2006")
-@section('meta_description', "Established in 2006, R & S Pioneer Pharmacy has been serving the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, DMV eye exams, and free delivery.")
+@section('meta_description', "Established in 2006, R & S Pioneer Pharmacy has been serving the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, DMV eye exams, and personal care.")
 
 @section('content')
 <!-- Hero Section (Goldberger-Inspired Layout: Photographic Background, Left Elevated Navy Card, Desktop Floating Proof, & 4 Circular Badges) -->
-<div class="relative flex min-h-[auto] sm:min-h-[82vh] lg:min-h-[90vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.90) 0%, rgba(7, 30, 60, 0.65) 52%, rgba(7, 30, 60, 0.30) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
+<div class="relative flex min-h-[auto] sm:min-h-[68vh] lg:min-h-[580px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.88) 0%, rgba(7, 30, 60, 0.60) 50%, rgba(7, 30, 60, 0.35) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-8 sm:pt-14 lg:pt-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-10 lg:pt-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 lg:gap-10 relative z-10 !pb-0">
         
         <!-- Left: Elevated Navy Gradient Card (Goldberger Elevated Format) -->
-        <section class="w-full lg:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-5 sm:p-8 lg:p-12 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-14 sm:pb-28 lg:pb-40">
-            <div class="flex flex-col gap-4 sm:gap-6">
+        <section class="w-full lg:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-10 sm:pb-20 lg:pb-28">
+            <div class="flex flex-col gap-3.5 sm:gap-5">
                 
                 <!-- 20-Year Milestone Pill Badge -->
                 <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md w-fit">
@@ -20,8 +20,21 @@
                     <span>Established 2006 &bull; Celebrating 20 Years</span>
                 </div>
 
+                <!-- Mobile / Tablet Featured Pharmacy Photo (Guarantees Pharmacy Counter & Signage is 100% Visible on Phone/Tablet) -->
+                <div class="block lg:hidden rounded-2xl overflow-hidden shadow-xl border border-white/20 relative group my-1">
+                    <img src="{{ asset('images/rsp-hero.jpg') }}" alt="R & S Pioneer Pharmacy Counter & Team" class="w-full h-44 sm:h-60 object-cover object-center">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#071E3C]/90 via-transparent to-black/20"></div>
+                    <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-xs text-white">
+                        <div class="flex items-center gap-1.5 font-bold">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span>1018 Ogden Ave, Bronx NY</span>
+                        </div>
+                        <span class="bg-[#C1272D] px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wide">Highbridge</span>
+                    </div>
+                </div>
+
                 <!-- Headline -->
-                <h1 class="text-2xl sm:text-4xl lg:text-[52px] font-extrabold font-display leading-[1.15] tracking-tight text-white break-words">
+                <h1 class="text-2xl sm:text-4xl lg:text-[46px] font-extrabold font-display leading-[1.15] tracking-tight text-white break-words">
                     <span class="block">Your Trusted</span>
                     <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E8F0FE] to-sky-200">
                         Pharmacy Since 2006
@@ -30,7 +43,7 @@
 
                 <!-- Subtitle with Official Motto -->
                 <p class="text-slate-200 text-xs sm:text-sm sm:leading-relaxed font-sans max-w-xl">
-                    Serving Highbridge and the South Bronx for 20 years. From prescription refills and walk-in vaccinations to Dis-Pill blister packaging, free local delivery, and our neighborhood toy store: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                    Serving Highbridge and the South Bronx for 20 years. From prescription refills and walk-in vaccinations to Dis-Pill blister packaging, DMV vision tests, and our neighborhood toy store: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Hero Buttons -->
@@ -50,34 +63,34 @@
                     
                     <!-- 1. Dis-Pill Packing -->
                     <a href="{{ route('services') }}#packaging" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        <div class="w-10 h-10 sm:w-13 sm:h-13 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                         </div>
                         <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Dis-Pill</h4>
                     </a>
 
                     <!-- 2. Prescription -->
                     <a href="{{ route('refill') }}" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#1A4FA0] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <div class="w-10 h-10 sm:w-13 sm:h-13 rounded-full bg-white shadow-lg flex items-center justify-center text-[#1A4FA0] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
                         <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Refills</h4>
                     </a>
 
                     <!-- 3. Walk-In Vaccines -->
                     <a href="{{ route('vaccinations') }}" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-emerald-600 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        <div class="w-10 h-10 sm:w-13 sm:h-13 rounded-full bg-white shadow-lg flex items-center justify-center text-emerald-600 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                         </div>
                         <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Vaccines</h4>
                     </a>
 
-                    <!-- 4. Fast Delivery -->
-                    <a href="{{ route('delivery') }}" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
-                        <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-amber-500 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                    <!-- 4. DMV Vision Test -->
+                    <a href="{{ route('services') }}#dmv" class="flex flex-col items-center justify-center gap-1 sm:gap-2 group text-center">
+                        <div class="w-10 h-10 sm:w-13 sm:h-13 rounded-full bg-white shadow-lg flex items-center justify-center text-amber-500 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                         </div>
-                        <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">Delivery</h4>
+                        <h4 class="text-[9px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition truncate max-w-full">DMV Vision</h4>
                     </a>
 
                 </div>
@@ -85,43 +98,43 @@
             </div>
         </section>
 
-        <!-- Right: Desktop Floating Social Proof Badges (High Visibility over Pharmacy Photo) -->
-        <div class="hidden xl:flex flex-col gap-4 pb-36 z-10 max-w-sm">
+        <!-- Right: Desktop Pharmacy Photo & Social Proof (Goldberger Inspiration) -->
+        <div class="hidden lg:flex flex-col gap-3.5 pb-16 lg:pb-24 z-10 w-full max-w-md ml-auto">
             
-            <!-- Google Review Card -->
-            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/40 text-[#0B2F5C]">
-                <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0 font-extrabold text-lg shadow-sm">
-                    <svg class="w-5 h-5 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                </div>
-                <div>
-                    <div class="flex items-center gap-1.5 font-extrabold text-sm text-[#0B2F5C]">
-                        <span>4.5 Google Rating</span>
-                        <span class="text-xs text-slate-500 font-normal">(39 Reviews)</span>
-                    </div>
-                    <p class="text-xs text-slate-600">Highbridge Bronx Community Favorite</p>
-                </div>
-            </div>
-
-            <!-- Walk-In Vaccines Status Card -->
-            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/40 text-[#0B2F5C]">
-                <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm font-bold text-lg">
-                    <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <div>
-                    <div class="flex items-center gap-1.5">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                        <span class="font-extrabold text-sm text-[#0B2F5C]">Walk-Ins Welcome Today</span>
-                    </div>
-                    <p class="text-xs text-slate-600">Flu, COVID-19 &amp; Adult Vaccines &bull; No Appt</p>
+            <!-- Authentic Pharmacy Showcase Card with Signage & Counter -->
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 relative group">
+                <img src="{{ asset('images/rsp-hero.jpg') }}" alt="R & S Pioneer Pharmacy Storefront & Team" class="w-full h-52 lg:h-56 object-cover object-center group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#071E3C]/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs">
+                    <span class="font-bold flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        1018 Ogden Ave, Bronx NY
+                    </span>
+                    <span class="bg-[#C1272D] text-white px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase">Highbridge</span>
                 </div>
             </div>
 
-            <!-- Storefront Badge (Authentic RSP Highbridge Location) -->
-            <div class="flex items-center gap-3 bg-[#071E3C]/95 backdrop-blur-md rounded-2xl p-3 shadow-2xl border border-white/10 text-white">
-                <img src="{{ asset('images/storefront.png') }}" alt="R & S Pioneer Pharmacy Storefront" class="w-14 h-11 object-cover rounded-lg border border-white/20 shrink-0">
-                <div class="text-xs">
-                    <strong class="block text-white font-bold leading-tight">1018 Ogden Ave, Bronx NY</strong>
-                    <span class="text-slate-300 text-[11px]">R &amp; S Pioneer &bull; Highbridge Landmark</span>
+            <div class="grid grid-cols-2 gap-3">
+                <!-- Google Review Card -->
+                <div class="flex items-center gap-2.5 bg-white/95 backdrop-blur-md rounded-2xl p-3 shadow-xl border border-white/40 text-[#0B2F5C]">
+                    <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0 font-extrabold shadow-sm">
+                        <svg class="w-4 h-4 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div>
+                        <div class="font-extrabold text-xs text-[#0B2F5C]">4.5 ★ Rating</div>
+                        <p class="text-[10px] text-slate-500">Google (39 Reviews)</p>
+                    </div>
+                </div>
+
+                <!-- Walk-In Vaccines Status Card -->
+                <div class="flex items-center gap-2.5 bg-white/95 backdrop-blur-md rounded-2xl p-3 shadow-xl border border-white/40 text-[#0B2F5C]">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm font-bold">
+                        <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <div>
+                        <div class="font-extrabold text-xs text-[#0B2F5C]">Walk-Ins Welcome</div>
+                        <p class="text-[10px] text-slate-500">No Appt Needed</p>
+                    </div>
                 </div>
             </div>
 
@@ -131,7 +144,7 @@
 </div>
 
 <!-- 3-Box Floating Feature Strip (Crimson #C1272D + Primary Navy #0B2F5C + Deep Navy #071E3C) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-8 sm:-mt-16 lg:-mt-28 relative z-30 mb-10 sm:mb-16">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-6 sm:-mt-10 lg:-mt-16 relative z-30 mb-10 sm:mb-16">
     <div class="flex flex-col lg:flex-row text-white shadow-2xl rounded-2xl lg:rounded-3xl overflow-hidden">
         
         <!-- Section 1: Crimson Red (Call Us At) -->
@@ -164,7 +177,7 @@
                 <div>
                     <h3 class="text-lg sm:text-xl font-bold tracking-tight">Transfer Your ℞ Today</h3>
                     <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mt-1">
-                        Just fill out the simple form. We coordinate with your doctor and previous pharmacy. Pickup or free local delivery. <b>We care about you!</b>
+                        Just fill out the simple form. We coordinate with your doctor and previous pharmacy for quick pickup. <b>We care about you!</b>
                     </p>
                 </div>
             </div>
@@ -239,7 +252,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                 </div>
                 <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-                    Since 2006, R &amp; S Pioneer Pharmacy has been committed to delivering personalized, high-quality care. Our mission is to provide trusted healthcare solutions tailored to the unique needs of our South Bronx community.
+                    Since 2006, R &amp; S Pioneer Pharmacy has been committed to providing personalized, high-quality care. Our mission is to provide trusted healthcare solutions tailored to the unique needs of our South Bronx community.
                 </p>
             </div>
 
@@ -281,7 +294,7 @@
                 For over 20 years, R &amp; S Pioneer Pharmacy has stood as a beacon of health and wellness in our Highbridge neighborhood. We pride ourselves on offering not just prescriptions, but a full spectrum of personalized services including medication management, Dis-Pill multi-dose packaging, walk-in vaccinations, DMV vision exams, and expert consultations.
             </p>
             <p class="leading-relaxed text-sm sm:text-base">
-                With a commitment to customer care, convenience, and community trust, we work tirelessly to ensure every customer receives the attention they deserve. Whether it’s delivering your prescriptions to your doorstep or providing critical health advice, our goal is to be a dependable partner in your healthcare journey.
+                With a commitment to customer care, convenience, and community trust, we work tirelessly to ensure every customer receives the attention they deserve. Whether it’s preparing your monthly blister packs or providing critical health advice, our goal is to be a dependable partner in your healthcare journey.
             </p>
 
             <!-- 3 Checkmark Bullet Points -->
@@ -292,7 +305,7 @@
                 </div>
                 <div class="flex items-start gap-3.5 sm:gap-4">
                     <svg class="w-5 h-5 text-[#C1272D] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                    <p class="text-xs sm:text-sm"><b>Fast &amp; Reliable Service:</b> Quick 15-minute prescription refills with seamless free home delivery across Highbridge.</p>
+                    <p class="text-xs sm:text-sm"><b>Fast &amp; Reliable Service:</b> Quick 10–15 minute prescription refills ready for fast pickup at 1018 Ogden Ave.</p>
                 </div>
                 <div class="flex items-start gap-3.5 sm:gap-4">
                     <svg class="w-5 h-5 text-[#C1272D] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -318,16 +331,16 @@
         <!-- 6 Cards Grid (Matching All Client Doc Requirements) -->
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 w-full">
             
-            <!-- Card 1: Fast Delivery -->
+            <!-- Card 1: Fast 15-Minute Refills -->
             <div class="h-full flex flex-col justify-between gap-4 rounded-3xl bg-white p-6 sm:p-8 lg:p-9 shadow-lg border border-[#0B2F5C]/10 hover:-translate-y-1.5 transition duration-300">
                 <div class="space-y-4">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#E8F0FE] flex items-center justify-center text-[#1A4FA0] shadow-sm">
-                        <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                        <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="font-bold text-lg sm:text-xl text-[#0B2F5C]">Fast Free Local Delivery</h3>
+                        <h3 class="font-bold text-lg sm:text-xl text-[#0B2F5C]">Fast 15-Minute Refills</h3>
                         <p class="text-[#475569] text-xs sm:text-sm leading-relaxed">
-                            Experience the convenience of same-day or next-day delivery across Highbridge, Concourse &amp; Yankee Stadium area, ensuring your medications are always in reach.
+                            No waiting in long corporate pharmacy lines. Request your refills online or by phone, and they are prepared and ready for fast pickup in 10–15 minutes.
                         </p>
                     </div>
                 </div>
@@ -395,7 +408,7 @@
                     <div class="flex flex-col gap-2">
                         <h3 class="font-bold text-lg sm:text-xl text-[#0B2F5C]">Passport Photos &amp; Notary</h3>
                         <p class="text-[#475569] text-xs sm:text-sm leading-relaxed">
-                            Instant 2x2 official photos for US passports and visas printed while you wait. Plus NY certified Notary Public and 10¢ photocopies/fax on site.
+                            Instant 2x2 official photos for US passports and visas printed while you wait. Plus NY certified Notary Public and fast photocopies &amp; fax services on site.
                         </p>
                     </div>
                 </div>
@@ -450,15 +463,15 @@
                     Managing your prescriptions has never been more convenient. With our simple online form, you can request transfers in just a few clicks. Whether you're at home, work, or on the go, moving your prescriptions is now seamless and stress-free.
                 </p>
                 <p class="text-slate-300 text-xs sm:text-base leading-relaxed">
-                    Just fill out the form, and we’ll ensure your medication is ready when you need it, with the option for pickup or delivery.
+                    Just fill out the form, and we’ll ensure your medication is ready when you need it for quick in-store pickup.
                 </p>
                 <p class="text-base sm:text-lg font-bold text-white pt-1">
                     Experience hassle-free refills &mdash; Your Health, Made Simple!
                 </p>
                 <div class="pt-2">
-                    <a href="{{ route('transfer') }}" class="w-full sm:w-fit inline-flex justify-center items-center gap-3 rounded-full border border-white/30 px-7 h-12 text-sm font-semibold text-white hover:bg-white hover:text-[#0B2F5C] transition shadow">
+                    <a href="{{ route('transfer') }}" class="w-full sm:w-fit inline-flex justify-center items-center gap-3 rounded-full bg-[#C1272D] hover:bg-[#a51d22] px-8 h-12 text-sm font-bold text-white transition-all shadow-lg hover:shadow-xl hover:scale-105">
                         <span>Transfer ℞ now</span>
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
@@ -559,7 +572,7 @@
 
         <section class="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-4xl mx-auto text-center">
             <p class="text-white/95 text-xs sm:text-base leading-relaxed">
-                At R &amp; S Pioneer Pharmacy, we’ve been serving our community since 2006 with a legacy of trust and reliability. We offer tailored healthcare solutions with fast and friendly service, plus conveniences like same-day free delivery, custom Dis-Pill blister packaging, and personal pharmacist access. When you choose us, you’re choosing a partner in your health who prioritizes your needs every step of the way.
+                At R &amp; S Pioneer Pharmacy, we’ve been serving our community since 2006 with a legacy of trust and reliability. We offer tailored healthcare solutions with fast and friendly service, plus conveniences like 15-minute refills, custom Dis-Pill blister packaging, and personal pharmacist access. When you choose us, you’re choosing a partner in your health who prioritizes your needs every step of the way.
             </p>
         </section>
 
@@ -608,7 +621,7 @@
     </div>
 </div>
 
-<!-- "Welcome to a Better Pharmacy Experience" (Split Delivery Image + Map) -->
+<!-- "Welcome to a Better Pharmacy Experience" (Split Storefront Image + Map) -->
 <div class="flex w-full bg-white py-12 sm:py-16 lg:py-24 text-slate-900">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 my-auto flex w-full flex-col gap-10 sm:gap-14">
         
@@ -623,10 +636,10 @@
             
             <div class="flex flex-col gap-4 sm:gap-5 w-full lg:w-1/2">
                 <p class="text-lg font-bold sm:text-xl text-[#0B2F5C]">
-                    Transfer Your Prescriptions Now
+                    Switching to R &amp; S Pioneer is Fast &amp; Simple
                 </p>
                 <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
-                    Switching to our pharmacy is simple and stress-free. Our easy transfer process ensures you can seamlessly move your prescriptions and start enjoying our personalized care without any hassle.
+                    Moving your prescriptions is simple and stress-free. Our easy transfer process ensures you can seamlessly move your prescriptions and start enjoying our personalized care without any hassle.
                 </p>
                 <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
                     No long lines, no complicated forms—just fill out our transfer form, and we’ll take care of everything, from contacting your old pharmacy to organizing your prescriptions.
@@ -635,18 +648,18 @@
                     Join us today and experience the difference in a pharmacy that truly puts your needs first.
                 </p>
                 <div class="pt-2">
-                    <a href="{{ route('transfer') }}" class="w-full sm:w-fit inline-flex justify-center items-center gap-3 rounded-full border border-[#0B2F5C] px-7 h-12 text-sm font-bold text-[#0B2F5C] hover:bg-[#0B2F5C] hover:text-white transition shadow-sm">
+                    <a href="{{ route('transfer') }}" class="w-full sm:w-fit inline-flex justify-center items-center gap-3 rounded-full bg-[#0B2F5C] hover:bg-[#071E3C] px-8 h-12 text-sm font-bold text-white transition-all shadow-md hover:shadow-lg hover:scale-105">
                         <span>Transfer ℞ Now</span>
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
 
-            <!-- Right: Delivery Photo & Interactive Map -->
+            <!-- Right: Storefront Photo & Interactive Map -->
             <div class="w-full lg:w-1/2 space-y-6">
-                <!-- Delivery Bag Photo -->
+                <!-- Storefront Photo -->
                 <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
-                    <img src="{{ asset('images/rx-delivery.jpg') }}" alt="Free Neighborhood Prescription Delivery" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <img src="{{ asset('images/storefront.png') }}" alt="R & S Pioneer Pharmacy 1018 Ogden Ave Storefront" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition duration-500">
                 </div>
 
                 <!-- Store Location Map Card -->

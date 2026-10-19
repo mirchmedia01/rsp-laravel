@@ -139,7 +139,7 @@
                 </div>
 
                 <p class="text-slate-600 leading-relaxed text-xs sm:text-base">
-                    Since 2006, <strong>R &amp; S Pioneer Pharmacy</strong> has been committed to delivering personalized, high-quality care. Our mission is to provide trusted healthcare solutions tailored to the unique needs of our Highbridge and South Bronx neighborhood.
+                    Since 2006, <strong>R &amp; S Pioneer Pharmacy</strong> has been committed to providing personalized, high-quality care. Our mission is to provide trusted healthcare solutions tailored to the unique needs of our Highbridge and South Bronx neighborhood.
                 </p>
 
                 <p class="text-slate-600 leading-relaxed text-xs sm:text-base">
@@ -164,7 +164,7 @@
                         </div>
                         <div>
                             <strong class="text-[#0B2F5C] font-bold text-xs sm:text-sm block">Fast &amp; Reliable Service:</strong>
-                            <span class="text-slate-600 text-xs sm:text-sm">Rapid prescription refills with seamless, free home delivery options throughout the South Bronx.</span>
+                            <span class="text-slate-600 text-xs sm:text-sm">Rapid 10–15 minute prescription refills prepared with precision at our Highbridge counter.</span>
                         </div>
                     </div>
 
@@ -194,7 +194,7 @@
             <div class="lg:col-span-5 w-full">
                 <div class="bg-gradient-to-b from-[#0B2F5C] to-[#071E3C] text-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl border border-white/10 space-y-6">
                     <div class="inline-block bg-[#C1272D] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white">
-                        Community Anchor Since 2006
+                        Serving Highbridge Since 2006
                     </div>
                     
                     <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold font-display text-white">
@@ -216,7 +216,7 @@
                         </div>
                         <div class="flex items-center gap-3">
                             <span class="w-2.5 h-2.5 rounded-full bg-[#C1272D] shrink-0"></span>
-                            Free Daily Delivery across Highbridge &amp; South Bronx
+                            Convenient In-Store Pickup &amp; Personal Pharmacist Counseling
                         </div>
                         <div class="flex items-center gap-3">
                             <span class="w-2.5 h-2.5 rounded-full bg-[#C1272D] shrink-0"></span>
@@ -288,7 +288,7 @@
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">Consistent Reliability</h3>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Open 7 days a week, 365 days a year. When you need medication refills, urgent walk-in shots, or fast delivery, we are consistently here to ensure peace of mind.
+                        Open 7 days a week, 365 days a year. When you need medication refills, urgent walk-in shots, or personal counseling, we are consistently here to ensure peace of mind.
                     </p>
                 </div>
                 <div class="mt-5 w-full h-1 bg-emerald-500 rounded-full"></div>
@@ -407,7 +407,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-[#071E3C]/90 via-transparent to-transparent flex items-end p-4">
                             <div class="flex items-center gap-2 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow text-xs font-bold text-[#0B2F5C]">
                                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                                <span>Consultation Desk &bull; Highbridge</span>
+                                <span>Pharmacist Consultation Desk</span>
                             </div>
                         </div>
                     </div>
@@ -454,8 +454,8 @@
                             <span class="text-[10px] text-slate-600 font-medium">Vaccines Administered</span>
                         </div>
                         <div class="p-3 bg-emerald-50/70 rounded-2xl text-center border border-emerald-200/50">
-                            <strong class="block text-lg font-black text-emerald-800 font-display">100%</strong>
-                            <span class="text-[10px] text-slate-600 font-medium">Free Doorstep Delivery</span>
+                            <strong class="block text-lg font-black text-emerald-800 font-display">15 Min</strong>
+                            <span class="text-[10px] text-slate-600 font-medium">Fast Refill Pickup</span>
                         </div>
                         <div class="p-3 bg-amber-50/70 rounded-2xl text-center border border-amber-200/50">
                             <strong class="block text-lg font-black text-amber-800 font-display">7 Days</strong>
@@ -489,7 +489,7 @@
                     </div>
 
                     <p>
-                        Kunal specializes in geriatric medication therapy management, pediatric formulations, diabetes care, and immunization administration. Under his direction, R &amp; S Pioneer Pharmacy has administered thousands of critical walk-in vaccines, performed hundreds of DMV vision exams, and delivered life-saving medications to homebound Bronx seniors.
+                        Kunal specializes in geriatric medication therapy management, pediatric formulations, diabetes care, and immunization administration. Under his direction, R &amp; S Pioneer Pharmacy has administered thousands of critical walk-in vaccines, performed hundreds of DMV vision exams, and organized personalized blister packs for Bronx seniors.
                     </p>
 
                     <!-- 3 Clinical Focus Cards -->
@@ -527,7 +527,7 @@
             <div class="pt-7 border-t border-slate-100 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between">
                 <div class="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-50 px-3.5 py-2 rounded-2xl sm:rounded-full border border-slate-200">
                     <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span>New York State Licensed Registered Pharmacist &bull; Highbridge Community Anchor</span>
+                    <span>New York State Licensed Registered Pharmacist &bull; Serving Highbridge Since 2006</span>
                 </div>
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                     <a href="tel:7185388183" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold text-xs sm:text-sm px-6 h-12 inline-flex items-center justify-center gap-2 shadow-md hover:scale-105 transition">
@@ -561,8 +561,9 @@
                 <span>Transfer ℞ Now</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="tel:7185388183" class="rounded-full border border-white text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-white hover:text-[#0B2F5C] transition shadow">
+            <a href="tel:7185388183" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all">
                 <span>Call (718) 538-8183</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
     </div>

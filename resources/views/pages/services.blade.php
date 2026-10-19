@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Our Services - Comprehensive Healthcare Solutions | R & S Pioneer Pharmacy')
-@section('meta_description', 'Dis-Pill blister packaging, walk-in vaccinations, DMV eye exams, passport photos, notary public, 10¢ copies, free local delivery, and full toy department.')
+@section('meta_description', 'Dis-Pill blister packaging, walk-in vaccinations, DMV eye exams, passport photos, notary public, fax and copy services, and full toy department.')
 
 @section('content')
 <!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
@@ -30,7 +30,7 @@
 
                 <!-- Subtitle with Official Motto -->
                 <p class="text-slate-200 text-xs sm:text-sm sm:leading-relaxed font-sans max-w-2xl">
-                    At R &amp; S Pioneer Pharmacy, we take pride in offering services tailored to meet your healthcare needs. From Dis-Pill blister packaging and walk-in vaccines to DMV vision tests, free delivery, and our neighborhood toy department: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                    At R &amp; S Pioneer Pharmacy, we take pride in offering services tailored to meet your healthcare needs. From Dis-Pill blister packaging and walk-in vaccines to DMV vision tests, passport photos, and our neighborhood toy department: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Buttons -->
@@ -52,11 +52,11 @@
         <div class="hidden xl:flex flex-col gap-4 pb-36 z-10 max-w-xs">
             <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
                 <div class="w-10 h-10 rounded-xl bg-[#C1272D] text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
                 <div>
-                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">Free Local Delivery</strong>
-                    <span class="text-slate-600 text-[11px]">South Bronx &amp; Highbridge</span>
+                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">20 Years in Highbridge</strong>
+                    <span class="text-slate-600 text-[11px]">Serving the community since 2006</span>
                 </div>
             </div>
             <div class="flex items-center gap-3.5 bg-[#071E3C]/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/10 text-white">
@@ -77,20 +77,20 @@
 <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-8 sm:-mt-16 lg:-mt-28 relative z-30 mb-12 sm:mb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         
-        <!-- Highlight 1: Free Delivery -->
-        <a href="{{ route('delivery') }}" class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300 group">
+        <!-- Highlight 1: Walk-In Vaccinations -->
+        <a href="{{ route('vaccinations') }}" class="h-full bg-white rounded-3xl p-5 sm:p-6 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300 group">
             <div class="space-y-3">
-                <div class="w-11 h-11 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-110 transition">
-                    <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                <div class="w-11 h-11 rounded-2xl bg-red-50 text-[#C1272D] flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-110 transition">
+                    <svg class="w-5 h-5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                 </div>
-                <h3 class="text-base sm:text-lg font-bold text-[#0B2F5C] font-display">Free Local Delivery</h3>
+                <h3 class="text-base sm:text-lg font-bold text-[#0B2F5C] font-display">Walk-In Vaccines</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">
-                    Same-day and next-day prescription delivery straight to your doorstep across Highbridge and the South Bronx.
+                    Flu, COVID-19, shingles &amp; RSV immunizations administered by licensed pharmacists with zero appointment needed.
                 </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-[11px] font-bold text-emerald-700">100% Free Service &rarr;</span>
-                <div class="w-12 h-1 bg-amber-500 rounded-full"></div>
+                <span class="text-[11px] font-bold text-[#C1272D]">No Appt Needed &rarr;</span>
+                <div class="w-12 h-1 bg-[#C1272D] rounded-full"></div>
             </div>
         </a>
 
@@ -164,31 +164,28 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             
-            <!-- Service 1: Fast Prescription Delivery -->
-            <div id="delivery" class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_30px_rgba(11,47,92,0.06)] hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+            <!-- Service 1: Licensed NY Notary Public -->
+            <div id="notary" class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_30px_rgba(11,47,92,0.06)] hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
-                        <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xl shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                        <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-700 flex items-center justify-center font-bold text-xl shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
-                        <span class="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">Free Service</span>
+                        <span class="text-[11px] font-bold bg-purple-100 text-purple-900 px-3 py-1 rounded-full uppercase tracking-wider">Official</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Free Daily Delivery</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Licensed Notary Public</h3>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Experience the convenience of same-day or next-day delivery across Highbridge and the South Bronx. We ensure your medications are always in hand when you need them most.
+                        Official New York State commissioned Notary Public on duty. Document notarization, certified legal affidavits, powers of attorney, and medical directives.
                     </p>
                     <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Delivery Mon–Sat right to your doorstep</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Dis-Pill boxes, OTC items, and insulins</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Ideal for seniors and busy families</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Powers of Attorney &amp; Healthcare Proxies</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Affidavits &amp; Official Sworn Statements</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Walk-in service &bull; Bring valid government photo ID</li>
                     </ul>
                 </div>
                 <div>
-                    <div class="mt-6 w-full h-1 bg-amber-500 rounded-full mb-3"></div>
-                    <a href="{{ route('delivery') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
-                        <span>View Delivery Areas &amp; Schedule</span>
-                        <span>&rarr;</span>
-                    </a>
+                    <div class="mt-6 w-full h-1 bg-purple-600 rounded-full mb-3"></div>
+                    <span class="text-xs font-bold text-[#0B2F5C]">NY State Commissioned on Duty</span>
                 </div>
             </div>
 
@@ -296,32 +293,32 @@
                 </div>
                 <div>
                     <div class="mt-6 w-full h-1 bg-sky-600 rounded-full mb-3"></div>
-                    <span class="text-xs font-bold text-[#0B2F5C]">Only $10 per set of 2 photos</span>
+                    <span class="text-xs font-bold text-[#0B2F5C]">Walk-ins welcome &bull; Set of 2 photos</span>
                 </div>
             </div>
 
-            <!-- Service 6: Notary Public & Document Services -->
-            <div id="notary" class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_30px_rgba(11,47,92,0.06)] hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+            <!-- Service 6: Photocopies, Printing & Secure Fax -->
+            <div id="copy-fax" class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_30px_rgba(11,47,92,0.06)] hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
-                        <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-700 flex items-center justify-center font-bold text-xl shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                        <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-xl shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
                         </div>
-                        <span class="text-[11px] font-bold bg-purple-100 text-purple-900 px-3 py-1 rounded-full uppercase tracking-wider">Official</span>
+                        <span class="text-[11px] font-bold bg-amber-100 text-amber-900 px-3 py-1 rounded-full uppercase tracking-wider">Fast Service</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Notary &amp; 10¢ Copies</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Copies, Printing &amp; Fax</h3>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Official New York State certified Notary Public on duty. Plus, affordable 10¢ black-and-white photocopies and domestic fax transmission with printed confirmation.
+                        Fast and clear black-and-white photocopies, color computer printouts, and secure domestic fax transmission directly to doctors, courts, or government agencies.
                     </p>
                     <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Affidavits, POAs, and medical forms</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> 10¢ per page photocopies</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Faxing to doctors and agencies</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Crisp B&amp;W and color printouts</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Outgoing &amp; incoming domestic faxing</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Printed transmission verification sheets</li>
                     </ul>
                 </div>
                 <div>
-                    <div class="mt-6 w-full h-1 bg-purple-600 rounded-full mb-3"></div>
-                    <span class="text-xs font-bold text-[#0B2F5C]">Bring valid government photo ID</span>
+                    <div class="mt-6 w-full h-1 bg-amber-500 rounded-full mb-3"></div>
+                    <span class="text-xs font-bold text-[#0B2F5C]">Walk-in &bull; Ready while you wait</span>
                 </div>
             </div>
 
@@ -389,21 +386,16 @@
                         Moving your prescriptions from CVS, Walgreens, or Rite Aid is 100% effortless. Simply provide your name and previous pharmacy—we take care of all phone calls and logistics.
                     </p>
                     <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Ready in 10 minutes or delivered free</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Ready in 10–15 minutes for pickup</li>
                         <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> We communicate with your doctors</li>
                         <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Direct insurance verification</li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-3">
-                    <div class="mt-6 w-full h-1 bg-[#C1272D] rounded-full mb-3"></div>
-                    <a href="{{ route('refill') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] whitespace-nowrap">Refill ℞ &rarr;</a>
-                </div>
-            </div>
-                    <div class="mt-6 w-full h-1 bg-[#C1272D] rounded-full mb-3"></div>
-                    <a href="{{ route('transfer') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
-                        <span>Transfer ℞ Online</span>
-                        <span>&rarr;</span>
-                    </a>
+                <div class="pt-4 border-t border-slate-100 mt-6">
+                    <div class="flex items-center gap-2">
+                        <a href="{{ route('refill') }}" class="flex-1 text-center py-2 px-3 rounded-full bg-[#0B2F5C] hover:bg-[#071E3C] text-white text-xs font-bold shadow-sm transition">Refill ℞</a>
+                        <a href="{{ route('transfer') }}" class="flex-1 text-center py-2 px-3 rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white text-xs font-bold shadow-sm transition">Transfer ℞</a>
+                    </div>
                 </div>
             </div>
 
@@ -477,7 +469,7 @@
                         Refill Your ℞ Today
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                        Managing your prescriptions has never been more convenient. Call our team or request a refill in seconds. We'll ensure your medication is ready for pickup or free doorstep delivery.
+                        Managing your prescriptions has never been more convenient. Call our team or request a refill in seconds. We'll ensure your medication is ready for fast in-store pickup at 1018 Ogden Ave.
                     </p>
                 </div>
                 <div class="pt-4 border-t border-white/10 flex items-center justify-between">
@@ -531,17 +523,17 @@
                     <span class="text-[#C1272D] group-open:rotate-180 transition-transform duration-300">▼</span>
                 </summary>
                 <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
-                    To transfer your prescriptions, simply fill out our online transfer form or call us with your name, birthdate, and previous pharmacy's details. We'll handle everything—contacting your former pharmacy and setting up your medications for pickup or free home delivery.
+                    To transfer your prescriptions, simply fill out our online transfer form or call us with your name, birthdate, and previous pharmacy's details. We'll handle everything—contacting your former pharmacy and having your medications ready for fast pickup.
                 </p>
             </details>
 
             <details class="group bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm cursor-pointer">
                 <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-sm sm:text-base list-none">
-                    <span>Do you offer same-day or next-day delivery?</span>
+                    <span>What are your store hours and walk-in policy?</span>
                     <span class="text-[#C1272D] group-open:rotate-180 transition-transform duration-300">▼</span>
                 </summary>
                 <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
-                    Yes! We provide 100% free prescription delivery across Highbridge, Grand Concourse, and the South Bronx. Just let us know when ordering your refills and our dedicated courier will bring it directly to your door.
+                    We are open 7 days a week: Monday to Friday 9:00 AM – 7:00 PM, Saturday 10:00 AM – 6:00 PM, and Sunday 10:00 AM – 3:00 PM. No appointment is needed for prescriptions, vaccines, notary services, or DMV vision tests—walk-ins are always welcome at 1018 Ogden Ave.
                 </p>
             </details>
 
@@ -594,8 +586,9 @@
                 <span>Call (718) 538-8183</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="{{ route('transfer') }}" class="rounded-full border border-white text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-white hover:text-[#0B2F5C] transition shadow">
+            <a href="{{ route('transfer') }}" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all">
                 <span>Transfer ℞ Online</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
     </div>

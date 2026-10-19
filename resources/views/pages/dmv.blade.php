@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'NY DMV Vision Test & Passport Photos - Walk-Ins Welcome | R & S Pioneer Pharmacy')
-@section('meta_description', 'Official NY DMV Vision Test in 3 minutes at R & S Pioneer Pharmacy Bronx NY. Electronic registry upload for online driver\'s license renewal. $10 passport photos & notary.')
+@section('meta_description', 'Official NY DMV Vision Test in 3 minutes at R & S Pioneer Pharmacy Bronx NY. Electronic registry upload for online driver\'s license renewal, passport photos & notary.')
 
 @section('content')
 <!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
@@ -64,7 +64,7 @@
                     <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 </div>
                 <div>
-                    <strong class="block text-white font-bold text-xs sm:text-sm">$10 Passport Photos</strong>
+                    <strong class="block text-white font-bold text-xs sm:text-sm">Passport Photos</strong>
                     <span class="text-slate-300 text-[11px]">Ready in 5 minutes</span>
                 </div>
             </div>
@@ -106,24 +106,24 @@
                 </p>
             </div>
             <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-bold text-[#C1272D]">$10 &bull; Ready in 5 Mins</span>
+                <span class="text-xs font-bold text-[#C1272D]">Walk-In &bull; Ready in 5 Mins</span>
                 <div class="w-12 h-1 bg-[#C1272D] rounded-full"></div>
             </div>
         </div>
 
-        <!-- Box 3: Notary Public & 10¢ Copies -->
+        <!-- Box 3: Notary Public & Copy Services -->
         <div class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_15px_35px_rgba(11,47,92,0.08)] flex flex-col justify-between hover:-translate-y-1.5 transition duration-300">
             <div class="space-y-3">
                 <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xl shadow-sm">
                     <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">Notary Public &amp; Copies</h3>
+                <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">Notary Public &amp; Copy/Fax</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Licensed NY State Notary Public on duty. Document notarization, 10¢ black-and-white photocopies, color printing, and secure faxing services.
+                    Licensed NY State Notary Public on duty. Document notarization, clean photocopies, color printing, and secure faxing services.
                 </p>
             </div>
             <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-700">10¢ Copies &bull; Walk-In</span>
+                <span class="text-xs font-bold text-emerald-700">Notary &amp; Copies &bull; Walk-In</span>
                 <div class="w-12 h-1 bg-amber-500 rounded-full"></div>
             </div>
         </div>
@@ -202,7 +202,7 @@
                 <div class="inline-flex items-center gap-2 bg-red-100 text-[#C1272D] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                     Official 2x2 Photos
                 </div>
-                <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Passport &amp; ID Photos ($10)</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Passport &amp; ID Photos</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Need passport photos fast? We take professional, high-resolution portrait photos printed on high-gloss photo paper while you wait.
                 </p>
@@ -227,7 +227,7 @@
                 <div class="inline-flex items-center gap-2 bg-blue-100 text-[#0B2F5C] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                     Legal &amp; Business Services
                 </div>
-                <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Notary Public &amp; 10¢ Copies</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Notary Public &amp; Copy/Fax Services</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Have important documents that need an official state seal, or need quick photocopies of bills, medical records, or school documents?
                 </p>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="flex items-center gap-2">
                         <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                        <span>Crisp black &amp; white copies for just 10¢ per page</span>
+                        <span>Crisp black &amp; white copies and color printing</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
@@ -266,8 +266,9 @@
                 <span>Call (718) 538-8183</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="{{ route('contact') }}" class="rounded-full border border-white text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-white hover:text-[#0B2F5C] transition shadow">
+            <a href="{{ route('contact') }}" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all">
                 <span>Directions &amp; Hours</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
     </div>

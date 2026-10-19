@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Frequently Asked Questions (FAQ) - Prescriptions, Insurance & Care | R & S Pioneer Pharmacy')
-@section('meta_description', 'Get answers to common questions about prescription refills, free Bronx delivery, Dis-Pill blister packaging, insurance plans, walk-in vaccinations, and DMV vision tests.')
+@section('meta_description', 'Get answers to common questions about prescription refills, fast counter pickup, Dis-Pill blister packaging, insurance plans, walk-in vaccinations, and DMV vision tests.')
 
 @section('content')
 <!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
@@ -30,7 +30,7 @@
 
                 <!-- Subtitle with Official Motto -->
                 <p class="text-slate-200 text-xs sm:text-sm sm:leading-relaxed font-sans max-w-2xl">
-                    Find quick answers to common questions about prescription refills, free delivery across the South Bronx, insurance plans, Dis-Pill blister packaging, and walk-in vaccines: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                    Find quick answers to common questions about prescription refills, convenient counter pickup, insurance plans, Dis-Pill blister packaging, and walk-in vaccines: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Buttons -->
@@ -77,14 +77,14 @@
 <section class="py-12 sm:py-16 lg:py-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 space-y-12 sm:space-y-16">
         
-        <!-- Category 1: Refills & Free Bronx Delivery -->
+        <!-- Category 1: Refills & In-Store Pickup -->
         <div class="space-y-4">
             <div class="flex items-center gap-3 border-b border-slate-200 pb-3">
                 <div class="w-8 h-8 rounded-xl bg-blue-50 text-[#0B2F5C] flex items-center justify-center font-bold text-sm">
-                    <svg class="w-4 h-4 text-[#0B2F5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                    <svg class="w-4 h-4 text-[#0B2F5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <h2 class="text-lg sm:text-xl font-bold font-display text-[#0B2F5C]">
-                    Prescription Refills &amp; Free Local Delivery
+                    Prescription Refills &amp; In-Store Pickup
                 </h2>
             </div>
 
@@ -95,27 +95,27 @@
                         <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
-                        Most routine refills submitted online or over the phone are ready in approximately 15 minutes. If your prescription requires doctor authorization or prior insurance approval, our team coordinates directly with your prescriber.
+                        Most routine refills submitted online or over the phone are ready in approximately 10–15 minutes. If your prescription requires doctor authorization or prior insurance approval, our team coordinates directly with your prescriber.
                     </p>
                 </details>
 
                 <details class="group bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-xs sm:text-sm list-none">
-                        <span>Is prescription delivery really 100% free?</span>
+                        <span>What are your store hours and walk-in policy?</span>
                         <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
-                        Yes, absolutely! We never charge delivery fees, service surcharges, or minimums for prescription medications delivered to patients across Highbridge, South Bronx, and Grand Concourse.
+                        We are open 7 days a week to serve you: Monday through Friday 9:00 AM – 7:00 PM, Saturday 10:00 AM – 6:00 PM, and Sunday 10:00 AM – 3:00 PM. No appointment is needed for prescription drop-offs, refills, walk-in vaccinations, DMV vision tests, or notary services. Walk-ins are always welcome at 1018 Ogden Ave!
                     </p>
                 </details>
 
                 <details class="group bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-xs sm:text-sm list-none">
-                        <span>Can I add over-the-counter (OTC) vitamins or supplies to my delivery?</span>
+                        <span>Can I pick up over-the-counter (OTC) items and use my insurance OTC card?</span>
                         <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
-                        Yes! Just specify the items in your online refill note or mention them over the phone. We carry pain relievers, cold and allergy medications, children's vitamins, diabetic supplies, and personal hygiene products. We also accept health plan OTC benefit cards.
+                        Yes, absolutely! We stock a wide selection of pain relievers, cold and allergy medications, children's vitamins, diabetic supplies, and personal hygiene products. We gladly accept major health plan OTC benefit cards (Healthfirst, Fidelis, MetroPlus, etc.) at our checkout counter.
                     </p>
                 </details>
             </div>
@@ -241,8 +241,9 @@
                 <span>Call (718) 538-8183</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="{{ route('contact') }}" class="rounded-full border border-white text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-white hover:text-[#0B2F5C] transition shadow">
+            <a href="{{ route('contact') }}" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm shadow-lg hover:shadow-xl hover:scale-105 transition-all">
                 <span>Contact Store</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
     </div>
