@@ -4,14 +4,14 @@
 @section('meta_description', 'Walk-in flu shots, COVID-19 boosters, Shingrix, RSV, and pneumonia vaccines at R & S Pioneer Pharmacy in South Bronx. No appointment needed. Free $0 copay with most insurance.')
 
 @section('content')
-<!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
-<div class="relative flex min-h-[auto] sm:min-h-[78vh] lg:min-h-[88vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.92) 0%, rgba(7, 30, 60, 0.72) 55%, rgba(7, 30, 60, 0.35) 100%), url('{{ asset('images/vaccine-care.jpg') }}');">
+<!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
+<div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[580px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.40) 0%, rgba(11, 47, 92, 0.20) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/vaccine-care.jpg') }}');">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-12 lg:py-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
         
-        <!-- Bottom Elevated Navy Glass Card -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-14 sm:pb-28 lg:pb-40">
+        <!-- Left: Bottom Elevated Navy Glass Card (Background Image 100% Visible) -->
+        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-12 sm:pb-24 lg:pb-32">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- Pill Badge -->
@@ -21,15 +21,15 @@
                 </div>
 
                 <!-- 2-Tone Headline -->
-                <h1 class="font-display leading-[1.15] tracking-tight text-white">
-                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-200">Walk-In Vaccination Services</span>
-                    <span class="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-1">
+                <h1 class="font-display leading-[1.15] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Walk-In Vaccination Services</span>
+                    <span class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-1">
                         No Appointment Ever Needed
                     </span>
                 </h1>
 
                 <!-- Subtitle with Official Motto -->
-                <p class="text-slate-200 text-xs sm:text-sm sm:leading-relaxed font-sans max-w-2xl">
+                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-medium">
                     Protect yourself and your loved ones quickly and comfortably. Stop by anytime between 10:00 AM and 6:00 PM on weekdays for fast, gentle vaccinations administered by licensed Bronx clinical pharmacists: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
@@ -49,7 +49,7 @@
         </section>
 
         <!-- Right Floating Badges (Desktop) -->
-        <div class="hidden xl:flex flex-col gap-4 pb-36 z-10 max-w-xs">
+        <div class="hidden xl:flex flex-col gap-4 pb-4 lg:pb-8 z-10 max-w-xs ml-auto">
             <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
                 <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
                     $0
@@ -59,7 +59,7 @@
                     <span class="text-slate-600 text-[11px]">Medicaid, Medicare &amp; Commercial</span>
                 </div>
             </div>
-            <div class="flex items-center gap-3.5 bg-[#071E3C]/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/10 text-white">
+            <div class="flex items-center gap-3.5 bg-[#071E3C]/80 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20 text-white">
                 <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-300 flex items-center justify-center font-bold text-base shrink-0">
                     <svg class="w-5 h-5 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>

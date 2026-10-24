@@ -4,14 +4,14 @@
 @section('meta_description', 'Visit R & S Pioneer Pharmacy at 1018 Ogden Ave, Bronx NY 10452. Open 7 days a week. Call (718) 538-8183 for refills, vaccines, or questions.')
 
 @section('content')
-<!-- Hero Section (Goldberger Elevated Card Layout with Photo Background) -->
-<div class="relative flex min-h-[auto] sm:min-h-[78vh] lg:min-h-[88vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.92) 0%, rgba(7, 30, 60, 0.72) 55%, rgba(7, 30, 60, 0.35) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
+<!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
+<div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[580px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.40) 0%, rgba(11, 47, 92, 0.20) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-14 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-12 lg:py-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
         
-        <!-- Bottom Elevated Navy Glass Card -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-14 sm:pb-28 lg:pb-40">
+        <!-- Left: Bottom Elevated Navy Glass Card (Background Image 100% Visible) -->
+        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-12 sm:pb-24 lg:pb-32">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- Pill Badge -->
@@ -21,15 +21,15 @@
                 </div>
 
                 <!-- 2-Tone Headline -->
-                <h1 class="font-display leading-[1.15] tracking-tight text-white">
-                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-200">Contact Us</span>
-                    <span class="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-1">
+                <h1 class="font-display leading-[1.15] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Contact Us</span>
+                    <span class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-1">
                         We're Here to Help &bull; Reach Out Anytime
                     </span>
                 </h1>
 
                 <!-- Subtitle with Official Motto -->
-                <p class="text-slate-200 text-xs sm:text-sm sm:leading-relaxed font-sans max-w-2xl">
+                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-medium">
                     Whether you have questions about prescription refills, Dis-Pill blister packaging, DMV vision tests, or walk-in vaccines, we're here to help: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
@@ -49,7 +49,7 @@
         </section>
 
         <!-- Right Floating Badges (Desktop) -->
-        <div class="hidden xl:flex flex-col gap-4 pb-36 z-10 max-w-xs">
+        <div class="hidden xl:flex flex-col gap-4 pb-4 lg:pb-8 z-10 max-w-xs ml-auto">
             <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
                 <div class="w-10 h-10 rounded-xl bg-[#0B2F5C] text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
@@ -59,7 +59,7 @@
                     <span class="text-slate-600 text-[11px]">Bronx, NY 10452</span>
                 </div>
             </div>
-            <div class="flex items-center gap-3.5 bg-[#071E3C]/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/10 text-white">
+            <div class="flex items-center gap-3.5 bg-[#071E3C]/80 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20 text-white">
                 <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base shrink-0">
                     <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
                 </div>
