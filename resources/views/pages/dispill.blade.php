@@ -6,7 +6,7 @@
 @section('content')
 <!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
 <div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[580px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.40) 0%, rgba(11, 47, 92, 0.20) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/dispill-packaging.jpg') }}');">
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/dispill-packaging.jpg') }}');">
     
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-12 lg:py-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
         
