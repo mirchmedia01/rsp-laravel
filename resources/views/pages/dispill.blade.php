@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Dis-Pill Multi-Dose Packaging - Medication Made Simple | R & S Pioneer Pharmacy')
-@section('meta_description', 'Never miss a dose with Dis-Pill blister packaging at R & S Pioneer Pharmacy Bronx NY. Color-coded morning, noon, evening, and bedtime pods. 100% free service.')
+@section('title', 'Multi-Dose Packaging for Medication Adherence (Dis-Pill & Cold Seal Blister Cards) | R & S Pioneer Pharmacy')
+@section('meta_description', 'We offer multi-dose packaging for medication adherence at R & S Pioneer Pharmacy Bronx NY, including Dis-Pill multi-dose packaging and Cold Seal Blister Card packaging. 100% free service.')
 
 @section('content')
 <!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
@@ -22,15 +22,15 @@
 
                 <!-- 2-Tone Headline -->
                 <h1 class="font-display leading-[1.15] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
-                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Dis-Pill Multi-Dose Packaging</span>
+                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Multi-Dose Packaging for Medication Adherence</span>
                     <span class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-1">
-                        Medication Management Made Simple
+                        Dis-Pill &amp; Cold Seal Blister Cards
                     </span>
                 </h1>
 
                 <!-- Subtitle with Official Motto -->
                 <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-medium">
-                    Replace confusing pill bottles with a single, color-coded calendar blister pack. Pharmacist-verified for safety, detachable for travel, and completely free for our patients: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                    We offer multi-dose packaging for medication adherence, including Dispill multi-dose packaging and Cold Seal Blister Card packaging. Replace confusing pill bottles with organized, color-coded calendar blister packs: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Buttons -->
@@ -178,7 +178,7 @@
                     The Smartest Way to Manage Complex Medication Regimens
                 </h2>
                 <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                    Taking multiple medications shouldn't feel like a full-time job. With R &amp; S Pioneer Pharmacy's Dis-Pill packaging, Pharmacist Kunal Shah and our team organize your entire month's prescriptions into one easy-to-follow, cold-sealed blister calendar.
+                    Taking multiple medications shouldn't feel like a full-time job. With R &amp; S Pioneer Pharmacy's multi-dose packaging, Pharmacist Kunal Shah, Pharm.D., and our team organize your entire month's prescriptions into one easy-to-follow adherence system. We offer both <strong>Dispill multi-dose packaging</strong> (with detachable daily pods) and <strong>Cold Seal Blister Card packaging</strong> (sealed securely without heat to preserve medication integrity).
                 </p>
 
                 <div class="space-y-3.5 pt-2">
@@ -197,8 +197,8 @@
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                         </div>
                         <div>
-                            <strong class="text-slate-900 text-xs sm:text-sm block">No More Hard-to-Open Bottle Caps</strong>
-                            <p class="text-xs text-slate-600">Foil-backed push-through blisters require gentle pressure, making them effortless for patients with arthritis.</p>
+                            <strong class="text-slate-900 text-xs sm:text-sm block">Cold Seal Blister Cards &amp; Easy Push-Through Foil</strong>
+                            <p class="text-xs text-slate-600">Our cold-sealed blister cards protect heat-sensitive medicines, eliminate difficult childproof caps, and push through with gentle pressure for patients with arthritis.</p>
                         </div>
                     </div>
 
@@ -208,7 +208,7 @@
                         </div>
                         <div>
                             <strong class="text-slate-900 text-xs sm:text-sm block">Synchronized Monthly Refills</strong>
-                            <p class="text-xs text-slate-600">We synchronize all your medications so your complete pack is ready once a month for fast, convenient pickup.</p>
+                            <p class="text-xs text-slate-600">We synchronize all your maintenance medications so your complete multi-dose pack is ready once a month for fast, convenient pickup.</p>
                         </div>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
             Ready to Try Dis-Pill for Yourself or a Loved One?
         </h2>
         <p class="max-w-2xl mx-auto text-slate-200 text-xs sm:text-base leading-relaxed">
-            Stop by 1018 Ogden Ave or call (718) 538-8183. Pharmacist Kunal Shah will review your medications and prepare your first month's Dis-Pill pack for convenient in-store pickup.
+            Stop by 1018 Ogden Ave or call (718) 538-8183. Pharmacist Kunal Shah, Pharm.D., will review your medications and prepare your multi-dose adherence packaging (Dis-Pill or Cold Seal Blister Cards) for convenient in-store pickup.
         </p>
         <div class="pt-2 flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4">
             <a href="tel:7185388183" class="rounded-full bg-white text-[#0B2F5C] font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-[#E8F0FE] transition shadow hover:scale-105">

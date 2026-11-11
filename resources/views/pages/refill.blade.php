@@ -102,7 +102,7 @@
                 </div>
                 <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">Clinical Review</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Pharmacist Kunal checks insurance copays, confirms refills remaining, screens drug interactions, and packages your order.
+                    Pharmacist Kunal, Pharm.D., checks insurance copays, confirms refills remaining, screens drug interactions, and packages your order.
                 </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">

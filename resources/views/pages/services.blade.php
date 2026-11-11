@@ -189,29 +189,57 @@
                 </div>
             </div>
 
-            <!-- Service 2: Dis-Pill Packaging -->
+            <!-- Service 2: Multi-Dose Adherence Packaging -->
             <div id="packaging" class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_30px_rgba(11,47,92,0.06)] hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
                 <div class="space-y-4">
                     <div class="flex justify-between items-start">
                         <div class="w-12 h-12 rounded-2xl bg-blue-50 text-[#0B2F5C] flex items-center justify-center font-bold text-xl shadow-sm">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                         </div>
-                        <span class="text-[11px] font-bold bg-[#E8F0FE] text-[#1A4FA0] px-3 py-1 rounded-full uppercase tracking-wider">Senior Care</span>
+                        <span class="text-[11px] font-bold bg-[#E8F0FE] text-[#1A4FA0] px-3 py-1 rounded-full uppercase tracking-wider">Adherence</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Dis-Pill Packaging</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Multi-Dose Packaging</h3>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Never worry about missed doses or confusing pill bottles. We organize all daily medications into sealed, cold-packed blister compartments organized by time of day.
+                        We offer multi-dose packaging for medication adherence, including <strong>Dispill multi-dose packaging</strong> and <strong>Cold Seal Blister Card packaging</strong>. Prescriptions are sealed and organized by time of day.
                     </p>
                     <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Dispill &amp; Cold Seal Blister Cards</li>
                         <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Morning, Noon, Evening &amp; Bedtime</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Detachable individual day pods</li>
                         <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Endorsed by home health aides</li>
                     </ul>
                 </div>
                 <div>
                     <div class="mt-6 w-full h-1 bg-[#0B2F5C] rounded-full mb-3"></div>
                     <a href="{{ route('dispill') }}" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
-                        <span>Learn About Dis-Pill Setup</span>
+                        <span>Learn About Adherence Packaging</span>
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service: Certified Birth Control Prescribing -->
+            <div id="birth-control" class="h-full bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_10px_30px_rgba(11,47,92,0.06)] hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div class="w-12 h-12 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center font-bold text-xl shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <span class="text-[11px] font-bold bg-pink-100 text-pink-900 px-3 py-1 rounded-full uppercase tracking-wider">Clinical Care</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#0B2F5C] font-display">Birth Control Prescribing</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Kunal Shah, Pharm.D., is a <strong>Certified Birth Control Prescribing Pharmacist in New York State</strong>. Receive direct evaluation and prescription for hormonal contraception on-site without seeing a doctor first.
+                    </p>
+                    <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> No doctor's visit or prescription needed</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Oral pills, patches, and vaginal rings</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#C1272D]"></span> Covered by Medicaid &amp; most insurance plans</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="mt-6 w-full h-1 bg-pink-600 rounded-full mb-3"></div>
+                    <a href="tel:7185388183" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] flex items-center justify-between">
+                        <span>Consult Pharmacist Kunal: (718) 538-8183</span>
                         <span>&rarr;</span>
                     </a>
                 </div>
@@ -409,12 +437,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             
             <div class="lg:col-span-6 space-y-5">
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#C1272D]">Specialized Medication Care</span>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#C1272D]">Medication Adherence Solutions</span>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-display text-[#0B2F5C]">
-                    Dis-Pill &amp; Multi-Dose Medication Blister Packaging
+                    Multi-Dose Packaging for Medication Adherence (Dis-Pill &amp; Cold Seal)
                 </h2>
                 <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
-                    Managing multiple prescription bottles, varying dosage schedules, and small pill organizers can lead to dangerous errors. Our advanced <strong>Dis-Pill packaging system</strong> organizes all of your daily medications into color-coded, sealed blister compartments categorized by time of day.
+                    Managing multiple prescription bottles, varying dosage schedules, and small pill organizers can lead to dangerous errors. We offer specialized multi-dose packaging for medication adherence: <strong>Dispill multi-dose packaging</strong> with detachable pods, and <strong>Cold Seal Blister Card packaging</strong> sealed securely without heat to preserve medication integrity and provide clear daily adherence tracking.
                 </p>
 
                 <div class="grid grid-cols-2 gap-3 pt-2">
@@ -559,11 +587,21 @@
 
             <details class="group bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm cursor-pointer">
                 <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-sm sm:text-base list-none">
-                    <span>How does the Dis-Pill multi-dose packaging work?</span>
+                    <span>How does the Dis-Pill and Cold Seal multi-dose packaging work?</span>
                     <span class="text-[#C1272D] group-open:rotate-180 transition-transform duration-300">▼</span>
                 </summary>
                 <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
-                    Our team packages your monthly medications into calendar blister cards divided into Morning, Noon, Evening, and Bedtime pods. It completely replaces messy pill bottles and prevents accidental double-dosing. Ask Pharmacist Kunal to set this up for you or an elderly relative today!
+                    We offer multi-dose packaging for medication adherence including Dispill multi-dose packaging and Cold Seal Blister Card packaging. Our team organizes your monthly medications into calendar blister cards divided into Morning, Noon, Evening, and Bedtime pods. It completely replaces messy pill bottles and prevents accidental double-dosing. Ask Pharmacist Kunal Shah, Pharm.D., to set this up for you or an elderly relative today!
+                </p>
+            </details>
+
+            <details class="group bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm cursor-pointer">
+                <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-sm sm:text-base list-none">
+                    <span>Can I get birth control directly from Pharmacist Kunal without seeing a doctor?</span>
+                    <span class="text-[#C1272D] group-open:rotate-180 transition-transform duration-300">▼</span>
+                </summary>
+                <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
+                    Yes! Kunal Shah, Pharm.D., is a Certified Birth Control Prescribing Pharmacist in New York State. You can walk in for a confidential clinical consultation, and Pharmacist Kunal can evaluate and prescribe hormonal contraception (pills, patches, or rings) on-site immediately—covered by Medicaid and most insurances.
                 </p>
             </details>
 
@@ -579,7 +617,7 @@
             Have Questions About Any of Our Services?
         </h2>
         <p class="max-w-2xl mx-auto text-slate-200 text-xs sm:text-base leading-relaxed">
-            Stop by 1018 Ogden Ave or call (718) 538-8183. Pharmacist Kunal Shah and our team are ready to help you 7 days a week.
+            Stop by 1018 Ogden Ave or call (718) 538-8183. Pharmacist Kunal Shah, Pharm.D., and our team are ready to help you 7 days a week.
         </p>
         <div class="pt-2 flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4">
             <a href="tel:7185388183" class="rounded-full bg-white text-[#0B2F5C] font-bold px-8 h-12 inline-flex items-center justify-center gap-3 text-sm hover:bg-[#E8F0FE] transition shadow hover:scale-105">

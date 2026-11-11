@@ -169,11 +169,21 @@
             <div class="space-y-3">
                 <details class="group bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-xs sm:text-sm list-none">
-                        <span>Is there an additional charge for Dis-Pill blister packaging?</span>
+                        <span>Is there an additional charge for Dis-Pill or Cold Seal blister packaging?</span>
                         <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
-                        No, Dis-Pill packaging is provided completely free of charge to all R &amp; S Pioneer Pharmacy patients. You pay only your standard insurance copays for your medications.
+                        No, multi-dose adherence packaging—both Dis-Pill and Cold Seal Blister Cards—is provided completely free of charge to all R &amp; S Pioneer Pharmacy patients. You pay only your standard insurance copays for your medications.
+                    </p>
+                </details>
+
+                <details class="group bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 shadow-sm cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-xs sm:text-sm list-none">
+                        <span>What is Cold Seal Blister Card packaging?</span>
+                        <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
+                        Cold Seal Blister Card packaging is a tamper-evident compliance card system sealed without applying heat. Because no heat is used, temperature-sensitive medication formulations maintain complete clinical stability and potency. Each dose is organized by date and time of day, making it easy for patients, caregivers, and home health aides to monitor adherence.
                     </p>
                 </details>
 
@@ -183,7 +193,7 @@
                         <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
-                        Simply call Pharmacist Kunal immediately. We will update your prescription profile and package a replacement adjusted blister card so your medication regimen stays completely accurate.
+                        Simply call Pharmacist Kunal Shah, Pharm.D., immediately. We will update your prescription profile and package a replacement adjusted blister card so your medication regimen stays completely accurate.
                     </p>
                 </details>
             </div>
@@ -196,11 +206,21 @@
                     <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </div>
                 <h2 class="text-lg sm:text-xl font-bold font-display text-[#0B2F5C]">
-                    Vaccinations, DMV Vision Tests &amp; Passport Photos
+                    Vaccinations, Birth Control, DMV Vision &amp; Notary
                 </h2>
             </div>
 
             <div class="space-y-3">
+                <details class="group bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 shadow-sm cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-xs sm:text-sm list-none">
+                        <span>Can Pharmacist Kunal prescribe birth control directly in New York State?</span>
+                        <svg class="w-4 h-4 text-[#C1272D] group-open:rotate-180 transition-transform duration-300 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed border-t border-slate-200/60 pt-3">
+                        Yes! Kunal Shah, Pharm.D., is a <strong>Certified Birth Control Prescribing Pharmacist in New York State</strong>. Patients can walk in for a confidential consultation, and Pharmacist Kunal can evaluate and write an immediate prescription for hormonal contraception (such as birth control pills, patches, or vaginal rings) without needing an appointment or prior prescription from a physician. The consultation and prescription are covered by Medicaid and most health plans.
+                    </p>
+                </details>
+
                 <details class="group bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 shadow-sm cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-[#0B2F5C] text-xs sm:text-sm list-none">
                         <span>Do I ever need an appointment for a flu shot or COVID-19 booster?</span>
@@ -231,7 +251,7 @@
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 text-center space-y-5 sm:space-y-6">
         <h3 class="text-[#E8F0FE] font-bold text-xs sm:text-sm tracking-wider uppercase">Still Have Questions?</h3>
         <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold font-display text-white">
-            Speak Directly with Pharmacist Kunal Shah
+            Speak Directly with Pharmacist Kunal Shah, Pharm.D.
         </h2>
         <p class="max-w-2xl mx-auto text-slate-200 text-xs sm:text-base leading-relaxed">
             Stop by 1018 Ogden Ave or call (718) 538-8183. We are open 7 days a week and ready to assist you.

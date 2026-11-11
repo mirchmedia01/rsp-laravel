@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'About Us - Two Decades of Trust and Service | R & S Pioneer Pharmacy Bronx NY')
-@section('meta_description', 'R & S Pioneer Pharmacy has been a cornerstone of healthcare in Highbridge and the South Bronx since 2006. Meet Pharmacist Kunal Shah and learn our story.')
+@section('meta_description', 'R & S Pioneer Pharmacy has been a cornerstone of healthcare in Highbridge and the South Bronx since 2006. Meet Head Pharmacist Kunal Shah, Pharm.D., and learn our story.')
 
 @section('content')
 <!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
@@ -55,8 +55,8 @@
                     ℞
                 </div>
                 <div>
-                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">Kunal Shah, R.Ph.</strong>
-                    <span class="text-slate-600 text-[11px]">Head Pharmacist &bull; St. John's Alum</span>
+                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">Kunal Shah, Pharm.D.</strong>
+                    <span class="text-slate-600 text-[11px]">Head Pharmacist &bull; St. John's University (2005)</span>
                 </div>
             </div>
             <div class="flex items-center gap-3.5 bg-[#071E3C]/80 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20 text-white">
@@ -375,22 +375,22 @@
                             <span>Head Pharmacist &amp; Owner</span>
                         </div>
                         <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display text-[#0B2F5C] mt-0.5">
-                            Kunal Shah, R.Ph.
+                            Kunal Shah, Pharm.D.
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5 flex items-center gap-1.5">
                             <svg class="w-4 h-4 text-[#1A4FA0] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
-                            <span>Alumnus, St. John's University College of Pharmacy</span>
+                            <span>Doctor of Pharmacy (Pharm.D. '05) &bull; St. John's University</span>
                         </p>
                     </div>
                 </div>
 
                 <!-- 20+ Years Clinical Badge -->
                 <div class="bg-gradient-to-br from-[#E8F0FE] to-[#d8e6fd] border border-[#0B2F5C]/15 px-5 py-3 rounded-2xl text-center self-start sm:self-auto shrink-0 shadow-sm">
-                    <span class="text-[10px] sm:text-xs font-extrabold text-[#1A4FA0] uppercase tracking-wider block">Clinical Experience</span>
+                    <span class="text-[10px] sm:text-xs font-extrabold text-[#1A4FA0] uppercase tracking-wider block">Community Pharmacy</span>
                     <span class="text-2xl sm:text-3xl font-black text-[#0B2F5C] font-display block leading-tight">20+ Years</span>
                     <span class="inline-flex items-center gap-1 text-[10px] text-emerald-700 font-bold mt-0.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        Active Bronx Practice
+                        Graduated 2005 &bull; Bronx Practice
                     </span>
                 </div>
             </div>
@@ -418,21 +418,28 @@
                             <div class="w-6 h-6 rounded-lg bg-[#0B2F5C] text-white flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                             </div>
-                            <span>New York State Licensed Registered Pharmacist</span>
+                            <span>New York State Licensed Doctor of Pharmacy (Pharm.D.)</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-[#F8FAFC] border border-slate-100 text-xs font-semibold text-slate-700">
+                            <div class="w-6 h-6 rounded-lg bg-pink-600 text-white flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            </div>
+                            <span class="font-bold text-pink-900">Certified Birth Control Prescribing Pharmacist in NY State</span>
                         </div>
 
                         <div class="flex items-center gap-3 p-3 rounded-xl bg-[#F8FAFC] border border-slate-100 text-xs font-semibold text-slate-700">
                             <div class="w-6 h-6 rounded-lg bg-[#C1272D] text-white flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                             </div>
-                            <span>Dis-Pill Multi-Dose Medication Specialist</span>
+                            <span>Multi-Dose Adherence Specialist (Dispill &amp; Cold Seal Blister Cards)</span>
                         </div>
 
                         <div class="flex items-center gap-3 p-3 rounded-xl bg-[#F8FAFC] border border-slate-100 text-xs font-semibold text-slate-700">
                             <div class="w-6 h-6 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                             </div>
-                            <span>Certified Walk-In Immunizer (All Ages)</span>
+                            <span>Certified Walk-In Immunizer &bull; Clinical Care (All Ages)</span>
                         </div>
 
                         <div class="flex items-center gap-3 p-3 rounded-xl bg-[#F8FAFC] border border-slate-100 text-xs font-semibold text-slate-700">
@@ -469,11 +476,11 @@
                 <div class="lg:col-span-7 space-y-6 text-slate-700 leading-relaxed text-xs sm:text-sm lg:text-base">
                     
                     <p>
-                        Kunal Shah earned his pharmacy degree from <strong>St. John's University College of Pharmacy</strong>, one of New York's premier pharmaceutical institutions. For over two decades, Kunal has dedicated his career to community-based clinical pharmacy in the South Bronx.
+                        <strong>Kunal Shah, Pharm.D.</strong>, graduated from <strong>St. John's University in 2005 with a Doctor of Pharmacy degree</strong>. With over 20 years of Community Pharmacy experience, Kunal has dedicated his career to delivering compassionate, accessible, and high-standard clinical healthcare across Highbridge and the South Bronx.
                     </p>
 
                     <p>
-                        Rather than operating within the impersonal confines of large corporate retail chains, Kunal founded <strong>R &amp; S Pioneer Pharmacy</strong> to practice healthcare the way it was meant to be: personal, patient-centered, and accessible to everyone regardless of economic background.
+                        Rather than operating within the impersonal confines of large corporate retail chains, Kunal founded <strong>R &amp; S Pioneer Pharmacy</strong> to practice healthcare the way it was meant to be: personal, patient-centered, and accessible to everyone regardless of background. As a <strong>Certified Birth Control Prescribing Pharmacist in New York State</strong>, Kunal offers direct consultations and writes prescriptions for hormonal contraception on-site, expanding essential healthcare access for neighborhood patients.
                     </p>
 
                     <!-- Stylized Modern Quote Callout -->
@@ -484,12 +491,12 @@
                         </p>
                         <div class="pt-1 flex items-center gap-2">
                             <span class="w-4 h-0.5 bg-[#C1272D]"></span>
-                            <span class="text-xs text-[#C1272D] font-extrabold tracking-wider uppercase">Kunal Shah, R.Ph. (Owner &amp; Head Pharmacist)</span>
+                            <span class="text-xs text-[#C1272D] font-extrabold tracking-wider uppercase">Kunal Shah, Pharm.D. (Owner &amp; Head Pharmacist)</span>
                         </div>
                     </div>
 
                     <p>
-                        Kunal specializes in geriatric medication therapy management, pediatric formulations, diabetes care, and immunization administration. Under his direction, R &amp; S Pioneer Pharmacy has administered thousands of critical walk-in vaccines, performed hundreds of DMV vision exams, and organized personalized blister packs for Bronx seniors.
+                        Kunal specializes in medication adherence packaging (including Dispill multi-dose packaging and Cold Seal Blister Card packaging), New York State certified birth control prescribing, geriatric medication therapy management, pediatric care, diabetes support, and comprehensive immunization administration.
                     </p>
 
                     <!-- 3 Clinical Focus Cards -->
@@ -498,8 +505,16 @@
                             <div class="w-7 h-7 rounded-lg bg-red-50 text-[#C1272D] flex items-center justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                             </div>
-                            <strong class="block text-xs font-bold text-[#0B2F5C]">Dis-Pill Packaging</strong>
-                            <p class="text-[11px] text-slate-500 leading-normal">Multi-dose blister cards eliminating missed doses for seniors.</p>
+                            <strong class="block text-xs font-bold text-[#0B2F5C]">Multi-Dose Adherence</strong>
+                            <p class="text-[11px] text-slate-500 leading-normal">Dispill &amp; Cold Seal Blister Card packaging for daily adherence.</p>
+                        </div>
+
+                        <div class="p-3.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm space-y-1.5">
+                            <div class="w-7 h-7 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            </div>
+                            <strong class="block text-xs font-bold text-[#0B2F5C]">Birth Control Prescribing</strong>
+                            <p class="text-[11px] text-slate-500 leading-normal">NYS certified pharmacist prescribing on-site with zero wait.</p>
                         </div>
 
                         <div class="p-3.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm space-y-1.5">
@@ -508,14 +523,6 @@
                             </div>
                             <strong class="block text-xs font-bold text-[#0B2F5C]">Walk-In Immunizer</strong>
                             <p class="text-[11px] text-slate-500 leading-normal">Certified for flu, COVID, RSV, and shingles vaccinations.</p>
-                        </div>
-
-                        <div class="p-3.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm space-y-1.5">
-                            <div class="w-7 h-7 rounded-lg bg-blue-50 text-[#1A4FA0] flex items-center justify-center">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                            </div>
-                            <strong class="block text-xs font-bold text-[#0B2F5C]">Patient Advocacy</strong>
-                            <p class="text-[11px] text-slate-500 leading-normal">Prior-authorization coordination and Medicaid navigation.</p>
                         </div>
                     </div>
 
@@ -527,7 +534,7 @@
             <div class="pt-7 border-t border-slate-100 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between">
                 <div class="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-50 px-3.5 py-2 rounded-2xl sm:rounded-full border border-slate-200">
                     <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span>New York State Licensed Registered Pharmacist &bull; Serving Highbridge Since 2006</span>
+                    <span>Doctor of Pharmacy (Pharm.D.) &bull; NYS Certified Birth Control Prescriber &bull; Serving Highbridge Since 2006</span>
                 </div>
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                     <a href="tel:7185388183" class="rounded-full bg-[#C1272D] hover:bg-[#a51d22] text-white font-bold text-xs sm:text-sm px-6 h-12 inline-flex items-center justify-center gap-2 shadow-md hover:scale-105 transition">

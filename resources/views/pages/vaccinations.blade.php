@@ -360,7 +360,7 @@
                 </div>
                 <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">2-Minute Screening</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Pharmacist Kunal reviews your health history, checks for eligible copay coverage ($0 with most plans), and answers any questions in English or Spanish.
+                    Pharmacist Kunal, Pharm.D., reviews your health history, checks for eligible copay coverage ($0 with most plans), and answers any questions in English or Spanish.
                 </p>
             </div>
 

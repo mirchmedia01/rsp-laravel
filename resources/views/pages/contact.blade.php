@@ -85,7 +85,7 @@
                 </div>
                 <h3 class="text-lg sm:text-xl font-bold text-[#0B2F5C] font-display">Call By Phone</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Speak directly with Pharmacist Kunal Shah and our team for refills, transfer requests, or medication inquiries.
+                    Speak directly with Pharmacist Kunal Shah, Pharm.D., and our team for refills, transfer requests, or medication inquiries.
                 </p>
                 <div class="pt-1">
                     <a href="tel:7185388183" class="text-lg font-extrabold text-[#C1272D] hover:underline">(718) 538-8183</a>

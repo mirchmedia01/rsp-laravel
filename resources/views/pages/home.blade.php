@@ -5,13 +5,13 @@
 
 @section('content')
 <!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
-<div class="relative flex min-h-[auto] sm:min-h-[70vh] lg:min-h-[640px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/home-hero-bg.jpg') }}');">
+<div class="relative flex min-h-[auto] sm:min-h-[72vh] lg:min-h-[680px] w-full bg-cover bg-top bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.38) 0%, rgba(11, 47, 92, 0.18) 50%, rgba(7, 30, 60, 0.12) 100%), url('{{ asset('images/home-hero-storefront.jpg') }}'); background-position: center top;">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-10 lg:pt-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 lg:gap-10 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-8 sm:pt-12 lg:pt-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
         
         <!-- Left: Elevated Ultra-Clear Glass Card (Background Image 100% Visible) -->
-        <section class="w-full lg:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-20 lg:pb-28">
+        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-20 lg:pb-28">
             <div class="flex flex-col gap-3.5 sm:gap-5">
                 
                 <!-- 20-Year Milestone Pill Badge -->
@@ -28,7 +28,7 @@
 
                 <!-- Subtitle with Official Motto -->
                 <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-xl font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
-                    Serving Highbridge and the South Bronx for 20 years. From prescription refills and walk-in vaccinations to Dis-Pill blister packaging, DMV vision tests, and our neighborhood toy store: <strong class="text-white font-bold italic">"We're the pharmacy that cares."</strong>
+                    Serving Highbridge and the South Bronx for 20 years. From prescription refills, walk-in vaccinations, and certified birth control prescribing to multi-dose adherence blister packaging (Dis-Pill &amp; Cold Seal), DMV vision tests, and our neighborhood toy store: <strong class="text-white font-bold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Hero Buttons -->
@@ -84,9 +84,9 @@
         </section>
 
         <!-- Right: Social Proof Badges (Desktop) -->
-        <div class="hidden lg:flex flex-col gap-3.5 pb-6 lg:pb-12 z-10 w-full max-w-xs ml-auto">
+        <div class="hidden lg:flex flex-col gap-3.5 pb-16 lg:pb-36 z-10 w-full max-w-xs ml-auto shrink-0 mb-2 lg:mb-4">
             <!-- Google Review Card -->
-            <div class="flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/40 text-[#0B2F5C]">
+            <div class="flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/40 text-[#0B2F5C] hover:scale-105 transition-transform duration-300">
                 <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0 font-extrabold shadow-sm">
                     <svg class="w-5 h-5 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 </div>
@@ -97,7 +97,7 @@
             </div>
 
             <!-- Walk-In Vaccines Status Card -->
-            <div class="flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/40 text-[#0B2F5C]">
+            <div class="flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/40 text-[#0B2F5C] hover:scale-105 transition-transform duration-300">
                 <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm font-bold">
                     <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                 </div>
@@ -124,7 +124,7 @@
                 <div>
                     <h3 class="text-lg sm:text-xl font-bold tracking-tight">Call Us At</h3>
                     <p class="text-xs sm:text-sm text-white/90 leading-relaxed mt-1">
-                        Speak directly with Pharmacist Kunal Shah and our caring team. English &amp; Español. <b>We care about you!</b>
+                        Speak directly with Pharmacist Kunal Shah, Pharm.D., and our caring team. English &amp; Español. <b>We care about you!</b>
                     </p>
                 </div>
             </div>
@@ -246,12 +246,12 @@
                         Rx
                     </div>
                     <div>
-                        <h4 class="font-bold text-[#0B2F5C] text-sm">Kunal Shah, R.Ph.</h4>
-                        <p class="text-xs text-slate-500">St. John's University College of Pharmacy</p>
+                        <h4 class="font-bold text-[#0B2F5C] text-sm">Kunal Shah, Pharm.D.</h4>
+                        <p class="text-xs text-slate-500">St. John's University (Pharm.D. '05) &bull; NYS Certified Birth Control Prescriber</p>
                     </div>
                 </div>
                 <p class="text-xs text-slate-700 leading-relaxed italic">
-                    "We view our patients as family, not prescription numbers. For 20 years, we've taken pride in packaging daily blister packs, offering walk-in vaccines, and answering every health question."
+                    "We view our patients as family, not prescription numbers. For over 20 years, we've taken pride in packaging multi-dose blister cards, offering walk-in vaccines, certified birth control prescribing, and answering every health question."
                 </p>
             </div>
         </div>
@@ -259,7 +259,7 @@
         <!-- Right Side Container: lg:w-[55%] -->
         <div class="flex w-full flex-col gap-5 rounded-3xl bg-[#F8FAFC] p-6 sm:p-9 lg:p-11 text-slate-700 lg:w-[55%] shadow-sm border border-[#0B2F5C]/10">
             <p class="leading-relaxed text-sm sm:text-base">
-                For over 20 years, R &amp; S Pioneer Pharmacy has stood as a beacon of health and wellness in our Highbridge neighborhood. We pride ourselves on offering not just prescriptions, but a full spectrum of personalized services including medication management, Dis-Pill multi-dose packaging, walk-in vaccinations, DMV vision exams, and expert consultations.
+                For over 20 years, R &amp; S Pioneer Pharmacy has stood as a beacon of health and wellness in our Highbridge neighborhood. We pride ourselves on offering not just prescriptions, but a full spectrum of personalized services including multi-dose medication adherence packaging (Dis-Pill &amp; Cold Seal Blister Cards), NYS Certified Birth Control prescribing, walk-in vaccinations, DMV vision exams, and expert consultations.
             </p>
             <p class="leading-relaxed text-sm sm:text-base">
                 With a commitment to customer care, convenience, and community trust, we work tirelessly to ensure every customer receives the attention they deserve. Whether it’s preparing your monthly blister packs or providing critical health advice, our goal is to be a dependable partner in your healthcare journey.
@@ -277,7 +277,7 @@
                 </div>
                 <div class="flex items-start gap-3.5 sm:gap-4">
                     <svg class="w-5 h-5 text-[#C1272D] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                    <p class="text-xs sm:text-sm"><b>Comprehensive Offerings:</b> From Dis-Pill packaging to walk-in vaccines, DMV vision exams, notary, and our full toy aisle.</p>
+                    <p class="text-xs sm:text-sm"><b>Comprehensive Offerings:</b> From multi-dose blister packaging (Dis-Pill &amp; Cold Seal) and certified birth control prescribing to walk-in vaccines, DMV vision exams, and our toy aisle.</p>
                 </div>
             </div>
         </div>
@@ -316,16 +316,16 @@
                 <div class="mx-auto mt-6 w-full bg-[#0B2F5C] h-1 rounded-full"></div>
             </div>
 
-            <!-- Card 2: Dis-Pill Packaging -->
+            <!-- Card 2: Multi-Dose Adherence Packaging -->
             <div class="h-full flex flex-col justify-between gap-4 rounded-3xl bg-white p-6 sm:p-8 lg:p-9 shadow-lg border border-[#0B2F5C]/10 hover:-translate-y-1.5 transition duration-300">
                 <div class="space-y-4">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-red-50 flex items-center justify-center text-[#C1272D] shadow-sm">
                         <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="font-bold text-lg sm:text-xl text-[#0B2F5C]">Dis-Pill Multi-Dose Packs</h3>
+                        <h3 class="font-bold text-lg sm:text-xl text-[#0B2F5C]">Multi-Dose Adherence Packs</h3>
                         <p class="text-[#475569] text-xs sm:text-sm leading-relaxed">
-                            Color-coded sealed blister packaging sorted into Morning, Noon, Evening, and Bedtime pods to eliminate missed or double doses for seniors and caregivers.
+                            We offer Dispill multi-dose packaging and Cold Seal Blister Card packaging for medication adherence—color-coded and organized by dose time to eliminate missed or double doses.
                         </p>
                     </div>
                 </div>
