@@ -5,8 +5,8 @@
 
 @section('content')
 <!-- BANNER 1 — LEGACY & COMMUNITY TRUST (Hero Section) -->
-<div class="relative flex min-h-[auto] sm:min-h-[70vh] lg:min-h-[620px] w-full bg-cover bg-top bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.45) 0%, rgba(11, 47, 92, 0.25) 50%, rgba(7, 30, 60, 0.16) 100%), url('{{ asset('images/home-hero-storefront.jpg') }}'); background-position: center top;">
+<div class="relative flex min-h-[auto] sm:min-h-[70vh] lg:min-h-[620px] w-full bg-[#00175D] bg-cover bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.45) 0%, rgba(11, 47, 92, 0.20) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/home-hero-banner.jpg') }}'); background-position: right center;">
     
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 lg:pt-10 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
         
