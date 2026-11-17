@@ -4,71 +4,52 @@
 @section('meta_description', 'Get answers to common questions about prescription refills, fast counter pickup, Dis-Pill blister packaging, insurance plans, walk-in vaccinations, and DMV vision tests.')
 
 @section('content')
-<!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
-<div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[580px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
+<!-- Hero Section (Custom FAQ Clipboard & Wooden Blocks Banner) -->
+<div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[620px] w-full bg-cover bg-right sm:bg-center bg-no-repeat text-white overflow-hidden items-center" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/faq-hero.jpg') }}'); background-position: center right;">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-12 lg:py-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 lg:py-20 my-auto w-full flex flex-col lg:flex-row items-center justify-between gap-6 xl:gap-10 relative z-10">
         
-        <!-- Left: Bottom Elevated Navy Glass Card (Background Image 100% Visible) -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-12 sm:pb-24 lg:pb-32">
+        <!-- Left: FAQ Help Center Elevated Glass Card -->
+        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-3xl sm:rounded-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/40 via-[#0D3B74]/30 to-[#07254E]/40 p-6 sm:p-8 lg:p-10 border border-white/25 shadow-2xl relative z-10 backdrop-blur-md">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
-                <!-- Pill Badge -->
-                <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md w-fit">
-                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <span>Patient Resource Center &bull; Highbridge Bronx</span>
+                <!-- Badge Row -->
+                <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        <span>Patient Help Center</span>
+                    </div>
+
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[11px] sm:text-xs font-black uppercase tracking-widest text-white shadow-sm">
+                        R &amp; S PIONEER PHARMACY
+                    </span>
                 </div>
 
-                <!-- 2-Tone Headline -->
-                <h1 class="font-display leading-[1.15] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
-                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Patient Help Center</span>
-                    <span class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-1">
-                        Frequently Asked Questions
-                    </span>
+                <!-- Main Headline -->
+                <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold font-display leading-[1.12] tracking-tight text-white break-words drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
+                    Frequently Asked <span class="italic text-amber-300 font-serif">Questions.</span>
                 </h1>
 
                 <!-- Subtitle with Official Motto -->
-                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-medium">
-                    Find quick answers to common questions about prescription refills, convenient counter pickup, insurance plans, Dis-Pill blister packaging, and walk-in vaccines: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-xl font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
+                    Find quick answers about prescription refills, convenient counter pickup, insurance coverage, Dis-Pill blister packaging, and walk-in vaccines: <strong class="text-white font-bold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Buttons -->
-                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
-                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-xl hover:scale-105 transition-all">
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 sm:pt-3">
+                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Call Pharmacist Kunal: (718) 538-8183</span>
+                        <span class="tracking-wide uppercase">Call (718) 538-8183</span>
                     </a>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-md hover:scale-105 transition-all">
-                        <span>Send Us a Question</span>
-                        <svg class="w-3.5 h-3.5 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-7 py-3.5 rounded-full font-bold text-sm shadow-md hover:scale-105 transition-all">
+                        <span class="tracking-wide uppercase">Send Us a Question</span>
+                        <svg class="w-4 h-4 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
 
             </div>
         </section>
-
-        <!-- Right Floating Badges (Desktop) -->
-        <div class="hidden xl:flex flex-col gap-4 pb-4 lg:pb-8 z-10 max-w-xs ml-auto">
-            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
-                <div class="w-10 h-10 rounded-xl bg-[#0B2F5C] text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </div>
-                <div>
-                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">Have a Question?</strong>
-                    <span class="text-slate-600 text-[11px]">We answer 7 days a week</span>
-                </div>
-            </div>
-            <div class="flex items-center gap-3.5 bg-[#071E3C]/80 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20 text-white">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base shrink-0">
-                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                </div>
-                <div>
-                    <strong class="block text-white font-bold text-xs sm:text-sm">Se Habla Español</strong>
-                    <span class="text-slate-300 text-[11px]">Bilingual staff available</span>
-                </div>
-            </div>
-        </div>
 
     </div>
 </div>

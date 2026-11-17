@@ -4,77 +4,97 @@
 @section('meta_description', 'Dis-Pill blister packaging, walk-in vaccinations, DMV eye exams, passport photos, notary public, fax and copy services, and full toy department.')
 
 @section('content')
-<!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
-<div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[580px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/dispill-packaging.jpg') }}');">
+<!-- BANNER 3 — PHARMACY CONVENIENCE & SERVICES (Hero Section) -->
+<div class="relative flex min-h-[auto] sm:min-h-[640px] lg:min-h-[700px] w-full bg-cover bg-right sm:bg-center bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/services-hero.jpg') }}'); background-position: center right;">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-12 lg:py-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 lg:pt-10 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
         
-        <!-- Left: Bottom Elevated Navy Glass Card (Background Image 100% Visible) -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-12 sm:pb-24 lg:pb-32">
-            <div class="flex flex-col gap-4 sm:gap-6">
+        <!-- BANNER 3 — PHARMACY CONVENIENCE & SERVICES Glass Card -->
+        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/40 via-[#0D3B74]/30 to-[#07254E]/40 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-14 lg:pb-16 backdrop-blur-md">
+            <div class="flex flex-col gap-3.5 sm:gap-4.5">
                 
-                <!-- Pill Badge -->
-                <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md w-fit">
-                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <span>Complete Care &bull; Highbridge Bronx</span>
+                <!-- Pharmacy Name & Anniversary Badge Row -->
+                <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <!-- Anniversary Badge: 20 YEARS | EST. 2006 -->
+                    <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        <span>20 YEARS | EST. 2006</span>
+                    </div>
+
+                    <!-- Pharmacy Name: R & S PIONEER PHARMACY -->
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[11px] sm:text-xs font-black uppercase tracking-widest text-white shadow-sm">
+                        R &amp; S PIONEER PHARMACY
+                    </span>
                 </div>
 
-                <!-- 2-Tone Headline -->
-                <h1 class="font-display leading-[1.15] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
-                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Our Services</span>
-                    <span class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-1">
-                        Comprehensive Healthcare Solutions
-                    </span>
+                <!-- Main Headline -->
+                <h1 class="text-2xl sm:text-4xl lg:text-[42px] font-extrabold font-display leading-[1.18] tracking-tight text-white break-words drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
+                    Refills in <span class="italic text-amber-300 font-serif">15 minutes.</span><br>
+                    <span class="text-xl sm:text-3xl lg:text-[32px] font-bold text-white">Free blister packs &bull; DMV vision tests &bull; Passport photos.</span>
                 </h1>
 
-                <!-- Subtitle with Official Motto -->
-                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-medium">
-                    At R &amp; S Pioneer Pharmacy, we take pride in offering services tailored to meet your healthcare needs. From Dis-Pill blister packaging and walk-in vaccines to DMV vision tests, passport photos, and our neighborhood toy department: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
-                </p>
+                <!-- Service Highlights (with icons) -->
+                <div class="grid grid-cols-2 gap-2 sm:gap-2.5 pt-0.5">
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-3 py-2 border border-white/15 text-xs sm:text-sm font-semibold text-white shadow-sm">
+                        <svg class="w-4 h-4 text-amber-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>15-Minute Refills</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-3 py-2 border border-white/15 text-xs sm:text-sm font-semibold text-white shadow-sm">
+                        <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <span>Free Dis-Pill Packs</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-3 py-2 border border-white/15 text-xs sm:text-sm font-semibold text-white shadow-sm">
+                        <svg class="w-4 h-4 text-blue-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        <span>NY DMV Vision Tests</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl px-3 py-2 border border-white/15 text-xs sm:text-sm font-semibold text-white shadow-sm">
+                        <svg class="w-4 h-4 text-purple-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Passport Photos</span>
+                    </div>
+                </div>
 
-                <!-- Dual Action Buttons -->
+                <!-- Community Highlight, Location Statement & Address Card -->
+                <div class="rounded-2xl bg-[#071E3C]/50 backdrop-blur-md border border-white/20 p-3.5 sm:p-4 text-white shadow-lg space-y-2">
+                    <!-- Community Highlight -->
+                    <div class="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-300">
+                        <svg class="w-4 h-4 shrink-0 text-[#C1272D] fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        <span class="tracking-wide">Serving the Boogie Down Bronx since 2006.</span>
+                    </div>
+
+                    <!-- Location Statement & Address -->
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2.5 text-xs text-white/90">
+                        <div class="flex items-center gap-1.5 font-medium">
+                            <svg class="w-3.5 h-3.5 shrink-0 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>In the heart of the Bronx, near Yankee Stadium.</span>
+                        </div>
+                        <span class="hidden sm:inline text-white/40">•</span>
+                        <a href="https://maps.google.com/?q=1018+Ogden+Ave,+Bronx,+NY+10452" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-amber-300 underline decoration-white/40 underline-offset-2 transition-colors flex items-center gap-1">
+                            <span>1018 Ogden Ave, Highbridge / South Bronx</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CTA Button & Phone Number -->
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
-                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-xl hover:scale-105 transition-all">
+                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Call (718) 538-8183</span>
+                        <span class="tracking-wide uppercase">CALL NOW</span>
                     </a>
-                    <a href="{{ route('transfer') }}" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-md hover:scale-105 transition-all">
-                        <span>Transfer Your ℞</span>
-                        <svg class="w-3.5 h-3.5 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-7 py-3.5 rounded-full font-bold text-sm shadow-md hover:scale-105 transition-all">
+                        <svg class="w-4 h-4 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>(718) 538-8183</span>
                     </a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Right Floating Badges (Desktop) -->
-        <div class="hidden xl:flex flex-col gap-4 pb-4 lg:pb-8 z-10 max-w-xs ml-auto">
-            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
-                <div class="w-10 h-10 rounded-xl bg-[#C1272D] text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                </div>
-                <div>
-                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">20 Years in Highbridge</strong>
-                    <span class="text-slate-600 text-[11px]">Serving the community since 2006</span>
-                </div>
-            </div>
-            <div class="flex items-center gap-3.5 bg-[#071E3C]/80 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20 text-white">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base shrink-0">
-                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                </div>
-                <div>
-                    <strong class="block text-white font-bold text-xs sm:text-sm">DMV Eye Exams</strong>
-                    <span class="text-slate-300 text-[11px]">3-Minute Walk-In Service</span>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
 <!-- Floating Overlapping Strip: 4 Service Highlights (Goldberger Format) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-8 sm:-mt-16 lg:-mt-28 relative z-30 mb-12 sm:mb-16">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-4 sm:-mt-6 lg:-mt-8 relative z-30 mb-12 sm:mb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         
         <!-- Highlight 1: Walk-In Vaccinations -->

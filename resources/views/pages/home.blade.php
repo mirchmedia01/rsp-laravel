@@ -4,115 +4,87 @@
 @section('meta_description', "Established in 2006, R & S Pioneer Pharmacy has been serving the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, DMV eye exams, and personal care.")
 
 @section('content')
-<!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
-<div class="relative flex min-h-[auto] sm:min-h-[72vh] lg:min-h-[680px] w-full bg-cover bg-top bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.38) 0%, rgba(11, 47, 92, 0.18) 50%, rgba(7, 30, 60, 0.12) 100%), url('{{ asset('images/home-hero-storefront.jpg') }}'); background-position: center top;">
+<!-- BANNER 1 — LEGACY & COMMUNITY TRUST (Hero Section) -->
+<div class="relative flex min-h-[auto] sm:min-h-[70vh] lg:min-h-[620px] w-full bg-cover bg-top bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.45) 0%, rgba(11, 47, 92, 0.25) 50%, rgba(7, 30, 60, 0.16) 100%), url('{{ asset('images/home-hero-storefront.jpg') }}'); background-position: center top;">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-8 sm:pt-12 lg:pt-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 lg:pt-10 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
         
-        <!-- Left: Elevated Ultra-Clear Glass Card (Background Image 100% Visible) -->
-        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-20 lg:pb-28">
+        <!-- BANNER 1 — LEGACY & COMMUNITY TRUST Card -->
+        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/35 via-[#0D3B74]/25 to-[#07254E]/35 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-14 lg:pb-16">
             <div class="flex flex-col gap-3.5 sm:gap-5">
                 
-                <!-- 20-Year Milestone Pill Badge -->
-                <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md w-fit">
-                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <span>Established 2006 &bull; Celebrating 20 Years</span>
+                <!-- Pharmacy Name & Anniversary Badge Row -->
+                <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <!-- Anniversary Badge: 20 YEARS | EST. 2006 -->
+                    <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        <span>20 YEARS | EST. 2006</span>
+                    </div>
+
+                    <!-- Pharmacy Name: R & S PIONEER PHARMACY -->
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[11px] sm:text-xs font-black uppercase tracking-widest text-white shadow-sm">
+                        R &amp; S PIONEER PHARMACY
+                    </span>
                 </div>
 
-                <!-- Headline -->
-                <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-extrabold font-display leading-[1.1] tracking-tight text-white break-words drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
-                    <span class="block">Your Trusted</span>
-                    <span class="block text-white">Pharmacy Since 2006</span>
+                <!-- Main Headline: Serving Highbridge & the South Bronx for 20 Years. -->
+                <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold font-display leading-[1.12] tracking-tight text-white break-words drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
+                    Serving Highbridge &amp; the South Bronx for <span class="italic text-amber-300 font-serif">20 Years.</span>
                 </h1>
 
-                <!-- Subtitle with Official Motto -->
-                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-xl font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
-                    Serving Highbridge and the South Bronx for 20 years. From prescription refills, walk-in vaccinations, and certified birth control prescribing to multi-dose adherence blister packaging (Dis-Pill &amp; Cold Seal), DMV vision tests, and our neighborhood toy store: <strong class="text-white font-bold italic">"We're the pharmacy that cares."</strong>
-                </p>
-
-                <!-- Dual Action Hero Buttons -->
-                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
-                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-6 sm:px-8 py-3.5 rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
-                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Call (718) 538-8183</span>
-                    </a>
-                    <a href="{{ route('transfer') }}" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-6 sm:px-7 py-3.5 rounded-full font-bold text-sm shadow-md hover:scale-105 transition-all">
-                        <span>Transfer Prescription</span>
-                        <svg class="w-4 h-4 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+                <!-- Slogan: We're the pharmacy that cares. -->
+                <div class="flex items-center gap-2.5">
+                    <span class="w-6 h-0.5 bg-[#C1272D] shrink-0"></span>
+                    <p class="text-base sm:text-lg lg:text-xl font-serif italic text-white font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
+                        "We're the pharmacy that cares."
+                    </p>
                 </div>
 
-                <!-- 4 Circular Badges (Responsive Row) -->
-                <div class="grid grid-cols-4 gap-2 sm:gap-4 font-bold pt-3 sm:pt-4 border-t border-white/10">
-                    
-                    <!-- 1. Dis-Pill Packing -->
-                    <a href="{{ route('services') }}#packaging" class="flex flex-col items-center justify-center gap-1.5 group text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                        </div>
-                        <h4 class="text-xs sm:text-sm text-white font-bold leading-tight group-hover:text-red-200 transition">Dis-Pill</h4>
-                    </a>
+                <!-- Community Highlight, Location Statement & Address Card -->
+                <div class="rounded-2xl bg-[#071E3C]/50 backdrop-blur-md border border-white/20 p-3.5 sm:p-4 text-white shadow-lg space-y-2">
+                    <!-- Community Highlight -->
+                    <div class="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-300">
+                        <svg class="w-4 h-4 shrink-0 text-[#C1272D] fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        <span class="tracking-wide">Proudly serving the Boogie Down Bronx.</span>
+                    </div>
 
-                    <!-- 2. Prescription -->
-                    <a href="{{ route('refill') }}" class="flex flex-col items-center justify-center gap-1.5 group text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <!-- Location Statement & Address -->
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2.5 text-xs text-white/90">
+                        <div class="flex items-center gap-1.5 font-medium">
+                            <svg class="w-3.5 h-3.5 shrink-0 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>In the heart of the Bronx, near Yankee Stadium.</span>
                         </div>
-                        <h4 class="text-xs sm:text-sm text-white font-bold leading-tight group-hover:text-red-200 transition">Prescription</h4>
-                    </a>
+                        <span class="hidden sm:inline text-white/40">•</span>
+                        <a href="https://maps.google.com/?q=1018+Ogden+Ave,+Bronx,+NY+10452" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-amber-300 underline decoration-white/40 underline-offset-2 transition-colors flex items-center gap-1">
+                            <span>1018 Ogden Ave, Highbridge / South Bronx</span>
+                        </a>
+                    </div>
+                </div>
 
-                    <!-- 3. Walk-In Vaccines -->
-                    <a href="{{ route('vaccinations') }}" class="flex flex-col items-center justify-center gap-1.5 group text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                        </div>
-                        <h4 class="text-xs sm:text-sm text-white font-bold leading-tight group-hover:text-red-200 transition">Vaccinations</h4>
+                <!-- CTA Buttons: CALL NOW | TRANSFER RX | (718) 538-8183 -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
+                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span class="tracking-wide uppercase">CALL NOW</span>
                     </a>
-
-                    <!-- 4. DMV Vision Test -->
-                    <a href="{{ route('services') }}#dmv" class="flex flex-col items-center justify-center gap-1.5 group text-center">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300 shrink-0">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                        </div>
-                        <h4 class="text-xs sm:text-sm text-white font-bold leading-tight group-hover:text-red-200 transition">DMV Vision</h4>
+                    <a href="{{ route('transfer') }}" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-7 py-3.5 rounded-full font-bold text-sm shadow-md hover:scale-105 transition-all">
+                        <span class="tracking-wide uppercase">TRANSFER RX</span>
+                        <svg class="w-4 h-4 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
-
+                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-1.5 text-white hover:text-amber-300 font-extrabold text-sm sm:text-base tracking-wide transition py-1.5 sm:py-0 sm:ml-2">
+                        <span>(718) 538-8183</span>
+                    </a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Right: Social Proof Badges (Desktop) -->
-        <div class="hidden lg:flex flex-col gap-3.5 pb-16 lg:pb-36 z-10 w-full max-w-xs ml-auto shrink-0 mb-2 lg:mb-4">
-            <!-- Google Review Card -->
-            <div class="flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/40 text-[#0B2F5C] hover:scale-105 transition-transform duration-300">
-                <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0 font-extrabold shadow-sm">
-                    <svg class="w-5 h-5 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                </div>
-                <div>
-                    <div class="font-extrabold text-sm text-[#0B2F5C]">4.5 ★ Rating</div>
-                    <p class="text-xs text-slate-500">Google (39 Reviews)</p>
-                </div>
-            </div>
-
-            <!-- Walk-In Vaccines Status Card -->
-            <div class="flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/40 text-[#0B2F5C] hover:scale-105 transition-transform duration-300">
-                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm font-bold">
-                    <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <div>
-                    <div class="font-extrabold text-sm text-[#0B2F5C]">Walk-Ins Welcome</div>
-                    <p class="text-xs text-slate-500">No Appt Needed</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
 <!-- 3-Box Floating Feature Strip (Translucent Crimson #C1272D + Primary Navy #0B2F5C + Deep Navy #071E3C with Opacity) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-6 sm:-mt-10 lg:-mt-16 relative z-30 mb-10 sm:mb-16">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-4 sm:-mt-6 lg:-mt-8 relative z-30 mb-10 sm:mb-16">
     <div class="flex flex-col lg:flex-row text-white shadow-2xl rounded-2xl lg:rounded-3xl overflow-hidden backdrop-blur-xl border border-white/20">
         
         <!-- Section 1: Crimson Red (Call Us At) - Translucent with Opacity -->

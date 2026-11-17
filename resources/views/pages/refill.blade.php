@@ -4,77 +4,58 @@
 @section('meta_description', 'Easily refill your prescriptions online at R & S Pioneer Pharmacy in Highbridge, Bronx. Fast 15-minute turnaround, $0 copay assistance, and convenient in-store pickup at 1018 Ogden Ave.')
 
 @section('content')
-<!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
-<div class="relative flex min-h-[auto] sm:min-h-[440px] lg:min-h-[480px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/refill-your-rx.jpg') }}');">
+<!-- Hero Section (Custom Rx Prescription Bottles & Blister Packs Banner) -->
+<div class="relative flex min-h-[auto] sm:min-h-[500px] lg:min-h-[540px] w-full bg-cover bg-right sm:bg-center bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/refill-hero.jpg') }}'); background-position: center right;">
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-10 lg:pt-14 pb-8 sm:pb-12 lg:pb-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 lg:pt-10 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
         
-        <!-- Left: Bottom Elevated Navy Glass Card (Background Image 100% Visible) -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-16 lg:pb-20">
+        <!-- Left: Refill Prescription Elevated Glass Card -->
+        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/40 via-[#0D3B74]/30 to-[#07254E]/40 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-14 lg:pb-16 backdrop-blur-md">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
-                <!-- Pill Badge -->
-                <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md w-fit">
-                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                    <span>Fast Turnaround &bull; 15-Minute Ready</span>
+                <!-- Badge Row -->
+                <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <div class="inline-flex items-center gap-2 bg-[#C1272D] px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white shadow-md">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        <span>FAST 15-MINUTE TURNAROUND</span>
+                    </div>
+
+                    <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-[11px] sm:text-xs font-black uppercase tracking-widest text-white shadow-sm">
+                        R &amp; S PIONEER PHARMACY
+                    </span>
                 </div>
 
-                <!-- 2-Tone Headline -->
-                <h1 class="font-display leading-[1.15] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
-                    <span class="block text-base sm:text-xl lg:text-2xl font-normal text-slate-100">Prescription Refills</span>
-                    <span class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-1">
-                        Refill Your Prescriptions Online
-                    </span>
+                <!-- Main Headline -->
+                <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold font-display leading-[1.12] tracking-tight text-white break-words drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
+                    Refill Your <span class="italic text-amber-300 font-serif">Prescriptions.</span>
                 </h1>
 
                 <!-- Subtitle with Official Motto -->
-                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-medium">
-                    Never wait in long lines again. Submit your Rx refill numbers online and pick them up in 15 minutes at our counter: <strong class="text-white font-semibold italic">"We're the pharmacy that cares."</strong>
+                <p class="text-white text-sm sm:text-base sm:leading-relaxed font-sans max-w-xl font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
+                    Never wait in long lines again. Submit your Rx refill numbers online and pick them up in 15 minutes at our counter: <strong class="text-white font-bold italic">"We're the pharmacy that cares."</strong>
                 </p>
 
                 <!-- Dual Action Buttons -->
-                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
-                    <a href="#refill-form" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-xl hover:scale-105 transition-all">
-                        <span>Fill Refill Form Below</span>
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 sm:pt-3">
+                    <a href="#refill-form" class="inline-flex items-center justify-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                        <span class="tracking-wide uppercase">Fill Refill Form Below</span>
+                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
                     </a>
-                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-md hover:scale-105 transition-all">
-                        <svg class="w-4 h-4 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Call (718) 538-8183</span>
+                    <a href="tel:7185388183" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-7 py-3.5 rounded-full font-bold text-sm shadow-md hover:scale-105 transition-all">
+                        <svg class="w-4 h-4 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span class="tracking-wide uppercase">Call (718) 538-8183</span>
                     </a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Right Floating Badges (Desktop) -->
-        <div class="hidden xl:flex flex-col gap-4 pb-4 lg:pb-8 z-10 max-w-xs ml-auto">
-            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/30 text-slate-900">
-                <div class="w-10 h-10 rounded-xl bg-[#0B2F5C] text-white flex items-center justify-center font-bold text-base shrink-0 shadow">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </div>
-                <div>
-                    <strong class="block text-slate-900 font-bold text-xs sm:text-sm">15-Minute Prep Time</strong>
-                    <span class="text-slate-600 text-[11px]">Ready before you arrive</span>
-                </div>
-            </div>
-            <div class="flex items-center gap-3.5 bg-[#071E3C]/80 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20 text-white">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base shrink-0">
-                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <div>
-                    <strong class="block text-white font-bold text-xs sm:text-sm">In-Store Pickup</strong>
-                    <span class="text-slate-300 text-[11px]">1018 Ogden Ave, Bronx</span>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
 <!-- Floating Overlapping Strip: 3 Quick Steps (Goldberger Format) -->
-<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-6 sm:-mt-10 lg:-mt-14 relative z-30 mb-8 sm:mb-10">
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 -mt-4 sm:-mt-6 lg:-mt-8 relative z-30 mb-8 sm:mb-10">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
         
         <!-- Step 1 -->
