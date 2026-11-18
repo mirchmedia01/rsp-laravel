@@ -74,3 +74,13 @@ img, svg, video, canvas, audio, iframe, embed, object {
     overflow-wrap: break-word;
     word-break: break-word;
 }
+
+/* Desktop-only hero background image so mobile/tablet show an unobstructed stacked banner */
+@media (min-width: 1024px) {
+    .hero-desktop-bg {
+        background-image: var(--hero-bg);
+        background-position: var(--hero-bg-pos, center right);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

@@ -5,13 +5,23 @@
 
 @section('content')
 <!-- BANNER 2 — WALK-IN VACCINES (Hero Section) -->
-<div class="relative flex min-h-[auto] sm:min-h-[640px] lg:min-h-[700px] w-full bg-cover bg-right sm:bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/vaccinations-hero.jpg') }}'); background-position: center right;">
+<div class="hero-desktop-bg relative flex flex-col lg:flex-row lg:min-h-[700px] w-full bg-gradient-to-b from-[#071E3C] via-[#0B2F5C] to-[#07254E] text-white overflow-hidden" 
+     style="--hero-bg: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/vaccinations-hero.jpg') }}'); --hero-bg-pos: center right;">
+
+    <!-- Mobile & Tablet Unobstructed Hero Banner Visual (< lg) -->
+    <div class="lg:hidden relative w-full aspect-[16/10] sm:aspect-[2/1] md:aspect-[2.35/1] bg-[#00175D] overflow-hidden shrink-0">
+        <img src="{{ asset('images/vaccinations-hero.jpg') }}"
+             alt="Walk-In Vaccinations at R & S Pioneer Pharmacy"
+             class="w-full h-full object-cover object-right"
+             loading="eager"
+             fetchpriority="high">
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-8 sm:h-10 bg-gradient-to-t from-[#071E3C] via-[#071E3C]/30 to-transparent"></div>
+    </div>
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 lg:pt-10 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-0 lg:px-10 pt-0 lg:pt-10 lg:mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
         
         <!-- BANNER 2 — WALK-IN VACCINES Glass Card -->
-        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/40 via-[#0D3B74]/30 to-[#07254E]/40 p-5 sm:p-7 lg:p-10 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-14 lg:pb-16 backdrop-blur-md">
+        <section class="w-full lg:max-w-xl xl:max-w-2xl px-4 sm:px-6 md:px-10 pt-4 sm:pt-6 pb-10 sm:pb-14 lg:rounded-t-[2.5rem] lg:bg-gradient-to-b lg:from-[#0B2F5C]/40 lg:via-[#0D3B74]/30 lg:to-[#07254E]/40 lg:p-10 lg:border-t lg:border-l lg:border-r lg:border-white/25 lg:shadow-2xl relative z-10 lg:pb-16 lg:backdrop-blur-md">
             <div class="flex flex-col gap-3.5 sm:gap-4.5">
                 
                 <!-- Pharmacy Name, Anniversary Badge & Section Heading Row -->

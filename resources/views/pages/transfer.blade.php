@@ -5,13 +5,23 @@
 
 @section('content')
 <!-- Hero Section (Clear Glass Card Layout with Fully Visible Background Image) -->
-<div class="relative flex min-h-[auto] sm:min-h-[440px] lg:min-h-[480px] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/refill-your-rx.jpg') }}');">
+<div class="hero-desktop-bg relative flex flex-col lg:flex-row lg:min-h-[480px] w-full bg-gradient-to-b from-[#071E3C] via-[#0B2F5C] to-[#07254E] text-white overflow-hidden" 
+     style="--hero-bg: linear-gradient(to right, rgba(11, 47, 92, 0.35) 0%, rgba(11, 47, 92, 0.15) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/refill-your-rx.jpg') }}'); --hero-bg-pos: center;">
+
+    <!-- Mobile & Tablet Unobstructed Hero Banner Visual (< lg) -->
+    <div class="lg:hidden relative w-full aspect-[16/10] sm:aspect-[16/9] md:aspect-[2/1] bg-[#00175D] overflow-hidden shrink-0">
+        <img src="{{ asset('images/refill-your-rx.jpg') }}"
+             alt="Effortless Prescription Transfers to R & S Pioneer Pharmacy"
+             class="w-full h-full object-cover object-center"
+             loading="eager"
+             fetchpriority="high">
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-8 sm:h-10 bg-gradient-to-t from-[#071E3C] via-[#071E3C]/30 to-transparent"></div>
+    </div>
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-10 lg:pt-14 pb-8 sm:pb-12 lg:pb-16 mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
+    <div class="max-w-screen-xl mx-auto px-0 lg:px-10 pt-0 lg:pt-14 pb-0 lg:mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-8 lg:gap-12 relative z-10 !pb-0">
         
         <!-- Left: Bottom Elevated Navy Glass Card (Background Image 100% Visible) -->
-        <section class="w-full lg:max-w-3xl rounded-t-3xl sm:rounded-t-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/25 via-[#0D3B74]/20 to-[#07254E]/25 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/25 shadow-2xl relative z-10 pb-10 sm:pb-16 lg:pb-20">
+        <section class="w-full lg:max-w-3xl px-4 sm:px-6 md:px-10 pt-5 sm:pt-7 pb-12 sm:pb-16 lg:rounded-t-[2.5rem] lg:bg-gradient-to-b lg:from-[#0B2F5C]/25 lg:via-[#0D3B74]/20 lg:to-[#07254E]/25 lg:p-12 lg:border-t lg:border-l lg:border-r lg:border-white/25 lg:shadow-2xl relative z-10 lg:pb-20">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- Pill Badge -->

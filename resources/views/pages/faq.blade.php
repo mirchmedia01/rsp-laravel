@@ -5,13 +5,23 @@
 
 @section('content')
 <!-- Hero Section (Custom FAQ Clipboard & Wooden Blocks Banner) -->
-<div class="relative flex min-h-[auto] sm:min-h-[64vh] lg:min-h-[620px] w-full bg-cover bg-right sm:bg-center bg-no-repeat text-white overflow-hidden items-center" 
-     style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/faq-hero.jpg') }}'); background-position: center right;">
+<div class="hero-desktop-bg relative flex flex-col lg:flex-row lg:min-h-[620px] w-full bg-gradient-to-b from-[#071E3C] via-[#0B2F5C] to-[#07254E] text-white overflow-hidden lg:items-center" 
+     style="--hero-bg: linear-gradient(to right, rgba(11, 47, 92, 0.78) 0%, rgba(11, 47, 92, 0.45) 50%, rgba(7, 30, 60, 0.15) 100%), url('{{ asset('images/faq-hero.jpg') }}'); --hero-bg-pos: center right;">
+
+    <!-- Mobile & Tablet Unobstructed Hero Banner Visual (< lg) -->
+    <div class="lg:hidden relative w-full aspect-[16/10] sm:aspect-[2/1] md:aspect-[2.35/1] bg-[#00175D] overflow-hidden shrink-0">
+        <img src="{{ asset('images/faq-hero.jpg') }}"
+             alt="Frequently Asked Questions at R & S Pioneer Pharmacy"
+             class="w-full h-full object-cover object-right"
+             loading="eager"
+             fetchpriority="high">
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-8 sm:h-10 bg-gradient-to-t from-[#071E3C] via-[#071E3C]/30 to-transparent"></div>
+    </div>
     
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 lg:py-20 my-auto w-full flex flex-col lg:flex-row items-center justify-between gap-6 xl:gap-10 relative z-10">
+    <div class="max-w-screen-xl mx-auto px-0 lg:px-10 py-0 lg:py-20 lg:my-auto w-full flex flex-col lg:flex-row items-center justify-between gap-6 xl:gap-10 relative z-10">
         
         <!-- Left: FAQ Help Center Elevated Glass Card -->
-        <section class="w-full lg:max-w-xl xl:max-w-2xl rounded-3xl sm:rounded-[2.5rem] bg-gradient-to-b from-[#0B2F5C]/40 via-[#0D3B74]/30 to-[#07254E]/40 p-6 sm:p-8 lg:p-10 border border-white/25 shadow-2xl relative z-10 backdrop-blur-md">
+        <section class="w-full lg:max-w-xl xl:max-w-2xl px-4 sm:px-6 md:px-10 pt-5 sm:pt-7 pb-10 sm:pb-12 lg:rounded-[2.5rem] lg:bg-gradient-to-b lg:from-[#0B2F5C]/40 lg:via-[#0D3B74]/30 lg:to-[#07254E]/40 lg:p-10 lg:border lg:border-white/25 lg:shadow-2xl relative z-10 lg:backdrop-blur-md">
             <div class="flex flex-col gap-4 sm:gap-6">
                 
                 <!-- Badge Row -->
